@@ -26,6 +26,12 @@ import {withUser} from './UserProvider'
                 articles: response.data.articles
             })
         })
+        axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa")
+        .then(response => {
+            this.setState({
+                articles2: response.data.articles
+            })
+        })
     }
    
    
