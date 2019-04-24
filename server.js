@@ -21,7 +21,7 @@ app.use('/articles', require('./routes/articles'))
 app.use("/user", require("./routes/user"))
 
 
-mongoose.connect('process.env.MONGODB_URI || mongodb://localhost:27017/version5', {useNewUrlParser: true}, () => {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/version5', {useNewUrlParser: true}, () => {
     console.log('connect to the db captain!')    // name of database is version2
 })
 
