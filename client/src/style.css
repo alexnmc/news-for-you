@@ -105,7 +105,6 @@ img{
 .topSpace{
     height: 15vh;
     width:100%;
-    
 }
 
 
@@ -256,17 +255,28 @@ h4{
     padding: 1%;
     padding-top:0;
     height: 80vh;
-    width: 23vh;
+    width: 26vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow: scroll;
-    margin-top: 45vh;
-    margin-left: 3%;
+    margin-top: 43vh;
+    margin-left: 1%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
-    animation: fadein2 1s, fade 2.8s;
+    animation: movein 1s, fade 2.8s;
 
 }
+
+   @keyframes fade {
+       from{opacity: 0}
+       to{opacity:1}
+   }
+    
+   @keyframes movein {
+    from{margin-left: -10%}
+    to{ margin-left:1%}
+   }
+ 
 
 
 .button2{
@@ -311,7 +321,7 @@ p{
 
 
 .argentina{
-    margin-top: 8vh
+    margin-top: 6vh
 }
 
 
@@ -326,7 +336,7 @@ p:hover{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     padding: 7px;
-    width: 20vh;
+    width: 24vh;
     height: auto;
     font-size: 2.3vh;
 }
