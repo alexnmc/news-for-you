@@ -231,19 +231,21 @@ button{
 }
 
 
-.navbarWrap{
+.navbarWrap2{
     display:flex;
     flex-direction:column;
     padding: 1%;
     height: 90vh;
-    width: 23.4vh;
-    position: absolute;
+    width: 23vh;
+    position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow: scroll;
-    margin-top: 49vh;
+    margin-top: 50vh;
+    margin-left: 3%;
     border-left: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(235, 212, 212);
     animation: fadein2 1s, fade 2.8s;
+
 }
 
 
@@ -259,7 +261,18 @@ button{
     position:fixed;
     border: 1px solid  rgb(141, 0, 0);
     border-radius: 2px;
-    margin-left: 6.2%;
+    margin-left: 3%;
+}
+
+
+
+.button2Wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    height: auto;
+   
 }
 
 
@@ -277,4 +290,9 @@ p{
     padding-left:5%;
 }
 
+
+p:hover{
+    color:white;
+    background-color: rgb(161, 0, 0);
+}
 
