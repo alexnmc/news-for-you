@@ -52,6 +52,7 @@ img{
     
 }
 
+
 .sourceName2{
     color: rgb(180, 0, 0);
     font-family: helvetica;
@@ -97,7 +98,6 @@ img{
     flex-direction: column;
     justify-content: center;
     background-color: rgba(15, 15, 15, 0.97);
-    
 }
 
 
@@ -136,9 +136,9 @@ img{
     justify-content: center;
 }
 
+
 .bbcDiv{
     background-color: rgb(255, 255, 250);
-    
 }
 
 
@@ -168,12 +168,14 @@ button{
 }
 
 
+
 .delete{
     background-color: rgb(235, 0, 0);
     color: white;
     width: 6vw;
     font-size: 12pt;
 }
+
 
 
 .saveAll{
@@ -183,21 +185,22 @@ button{
     position:fixed;
     border-radius: 2px;
     margin-left: -5vw;
-    margin-top: 45vh;
+    margin-top: 9vh;
     background-color: rgba(0, 0, 0, 0);
     color: rgba(0, 155, 34, 0.945);
     font-family: tahoma;    
-    
 }
 
+
 .logout{
-    margin-top: 10vh;
+    margin-top: 85vh;
     position: fixed;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(223, 0, 0);
     font-family: tahoma;    
     margin-left: -5vw
 }
+
 
 
 .deleteAll{
@@ -291,7 +294,7 @@ h4{
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow: scroll;
-    margin-top: 52vh;
+    margin-top: 50vh;
     margin-left: 1%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
@@ -317,12 +320,11 @@ h4{
     cursor: pointer;
     position:fixed;
     border-radius: 2px;
-    margin-left: 3%;
-    margin-top: 10vh;
+    margin-left: 5%;
+    margin-top: 9vh;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(223, 0, 0);
     font-family: tahoma;    
-    
 }
 
 
@@ -333,7 +335,6 @@ h4{
     justify-content: flex-start;
     width:100%;
     height: auto;
-   
 }
 
 
