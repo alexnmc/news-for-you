@@ -60,6 +60,7 @@ class Home extends Component {
                     
                     :
                     
+                    <div className = 'logIn'>
                     <form onSubmit={this.props.handleSignup} className='signUp'>
                         <h4>Sign Up:</h4>
                         
@@ -81,7 +82,8 @@ class Home extends Component {
                             onChange = {this.props.handleChange}
                         />
                         <button className = 'loginButton'>Sign up</button>
-                    </form>               
+                    </form>   
+                    </div>            
                     }
                 </div>
             </div>
