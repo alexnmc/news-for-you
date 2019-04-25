@@ -52,7 +52,6 @@ import {withButton} from './ButtonProvider'
             alert(response.data)
         })
         .catch(err => console.log(err.response.data.errMsg))
-        
     }
    
    
@@ -78,8 +77,10 @@ import {withButton} from './ButtonProvider'
                 <div className = "topSpace">
                 </div>
                 <Button1/>
-                <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
-                <button className = 'logout' onClick = {this.props.logout}>Log out</button>
+                <div className = 'buttonWrap'>
+                    <button className = 'logout' onClick = {this.props.logout}>Log out</button>
+                    <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
+                </div>
                 {article}
              </div>
         )
