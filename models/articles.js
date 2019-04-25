@@ -17,8 +17,12 @@ const articlesSchema = new Schema({
         type: String
     },
     
+    url: {
+        type: String
+    },
+
     userID:{
-     type: String
+        type: String
     }
 })
 

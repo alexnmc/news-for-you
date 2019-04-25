@@ -78,14 +78,15 @@ import {withUser} from './UserProvider'
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
-                <button onClick = {() => this.save(item.title, item.urlToImage, item.description)}>Save</button>
+                    <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url)}>Save</button>
+                    <a className = "readMore"  href={item.url}>read more</a>
                 </div>
             </div>
         )
     })
        
         return(
-            <div>
+            <div className = 'bbcDiv'>
                 <div className = "topSpace">
                 </div>
                 <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>

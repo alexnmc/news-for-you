@@ -61,21 +61,23 @@ import {withUser} from './UserProvider'
         const article = this.state.articles.map(item => {
         return(
            <div key = {Math.random()}>
-               <div className = "newsDiv" >
+               <div className = "newsDiv2" >
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
                     <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
-               </div>
+                    <a className = "readMore"  href={item.url}>read more</a>
+                </div>
            </div>
         )
     })
        
         return(
             <div className = 'saved'>
-                <div className = "topSpace"></div>
+                <div className = "topSpace">
                 <button className = 'deleteAll' onClick = {() => this.deleteAll(this.state.idNumber)}>Delete all</button>
-               {this.state.articles.length ? article : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
+                </div>
+                {this.state.articles.length ? article : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
         )
     }
