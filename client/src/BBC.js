@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Button1 from './Button1'
 import {withUser} from './UserProvider'
+import {withButton} from './ButtonProvider'
 
 
 
@@ -9,9 +11,7 @@ import {withUser} from './UserProvider'
     constructor(props){
         super(props)
         this.state = {
-            articles:[],
-            articles2: [],
-            articles3: [],
+           
             userID: this.props.user._id
         }
     }
@@ -20,26 +20,15 @@ import {withUser} from './UserProvider'
    
     
     componentDidMount(){
-        axios.get("https://newsapi.org/v2/top-headlines?country=au&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa")
-        .then(response => {
-            this.setState({
-                articles: response.data.articles
-            })
-        })
-        axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa")
-        .then(response => {
-            this.setState({
-                articles2: response.data.articles
-            })
-        })
+        this.props.getMount()
+       
     }
    
    
 
     
     saveAll = () => {
-        const articles4 = this.state.articles.concat(this.state.articles2)
-        const final = articles4.concat(this.state.articles3)
+        const final = this.props.articles
         for(let i = 0; i < final.length; i++){
             final[i].userID = this.state.userID
             axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
@@ -69,9 +58,8 @@ import {withUser} from './UserProvider'
    
    
     render(){
-        const articles4 = this.state.articles.concat(this.state.articles2)
-        const final = articles4.concat(this.state.articles3)
-        const article = final.map(item => {
+        
+        const article = this.props.articles.map(item => {
         return(
             <div key = { Math.random()}>
                 <div className = "newsDiv" >
@@ -89,6 +77,7 @@ import {withUser} from './UserProvider'
             <div className = 'bbcDiv'>
                 <div className = "topSpace">
                 </div>
+                <Button1/>
                 <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                 <button className = 'logout' onClick = {this.props.logout}>Log out</button>
                 {article}
@@ -97,4 +86,4 @@ import {withUser} from './UserProvider'
     }
 }
 
-export default withUser(BBC)
+export default withButton(withUser(BBC))

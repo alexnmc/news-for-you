@@ -15,7 +15,6 @@ class Home extends Component {
     }
 
     
-    
     handleChange = (e) => {
         e.preventDefault()
         const {name, value} = e.target
@@ -23,16 +22,6 @@ class Home extends Component {
             [name]: value
         })
     }
-
-    
-    
-    handleErase = () => {
-            
-            this.props.handleDelete2(this.props.user._id)
-            this.props.logout()
-            this.props.handleDelete3(this.props.user._id)
-    }
-
 
     
     render(){

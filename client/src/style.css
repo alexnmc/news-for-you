@@ -168,7 +168,7 @@ button{
     border: 2px solid rgb(157, 0, 0);
     border-radius: 4px;
     font-weight: 900;
-    width:100pt;
+    width: 8vw;
 }
 
 
@@ -228,5 +228,53 @@ button{
     font-size: 14pt;
     font-weight: 500;
     cursor: pointer;
-    
 }
+
+
+.navbarWrap{
+    display:flex;
+    flex-direction:column;
+    padding: 1%;
+    height: 90vh;
+    width: 23.4vh;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.979);
+    overflow: scroll;
+    margin-top: 49vh;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    animation: fadein2 1s, fade 2.8s;
+}
+
+
+.button2{
+    width: 8vw;
+    height: 3.7vh;
+    font-size:15px;
+    font-family: 'helvetica';
+    font-weight: bolder;
+    color: rgb(241, 241, 241);
+    background-color:  rgb(175, 0, 0);
+    cursor: pointer;
+    position:fixed;
+    border: 1px solid  rgb(141, 0, 0);
+    border-radius: 2px;
+    margin-left: 6.2%;
+}
+
+
+
+p{
+    font-size: 2.3vh;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rgb(155, 0, 0);
+    cursor: pointer;
+    margin-bottom:1.2vh;
+    font-family: 'helvetica';
+    font-weight: 700;
+    padding:0.3vh;
+    padding-left:5%;
+}
+
+
