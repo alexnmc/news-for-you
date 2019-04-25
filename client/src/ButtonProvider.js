@@ -15,6 +15,7 @@ class ButtonProvider extends Component {
             toggle: false,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "USA",
+            sourceName: this.name
             
         }
     }

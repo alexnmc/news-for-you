@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import {withUser} from './UserProvider'
+import {withButton} from './ButtonProvider'
 
 
 const Navbar = (props) => {
@@ -9,9 +10,10 @@ const Navbar = (props) => {
             
             {props.token ? <Link to = "/">Home</Link> : null}
             {props.token ? <Link to = "/saved">Saved</Link> : null}
+            
            
         </div>
     )
 }
 
-export default withUser(Navbar)
+export default withButton(withUser(Navbar))

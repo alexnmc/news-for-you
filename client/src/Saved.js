@@ -73,11 +73,17 @@ import {withUser} from './UserProvider'
     })
        
         return(
+            <div>
             <div className = 'saved'>
-                <div className = "topSpace">
+                <div className = "topSpace2">
+                <div>
                 <button className = 'deleteAll' onClick = {() => this.deleteAll(this.state.idNumber)}>Delete all</button>
                 </div>
+                <h1 className = 'sourceName2'>{ this.state.articles.length ? 'Your saved articles:' : null}</h1>
+                </div>
+                
                 {this.state.articles.length ? article : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
+            </div>
             </div>
         )
     }
