@@ -20,7 +20,7 @@ a{
     text-decoration: none;
     font-size: 20px;
     color: rgb(223, 0, 0);
-    margin: 4vw;
+    margin: 3vw;
 }
 
 
@@ -192,16 +192,6 @@ button{
 }
 
 
-.logout{
-    margin-top: 85vh;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(223, 0, 0);
-    font-family: tahoma;    
-    margin-left: -5vw
-}
-
-
 
 .deleteAll{
     background-color: rgb(192, 0, 0);
@@ -313,19 +303,6 @@ h4{
    }
  
 
-
-.button2{
-    width: 8vw;
-    height: 3.7vh;
-    cursor: pointer;
-    position:fixed;
-    border-radius: 2px;
-    
-   
-    background-color: rgba(0, 0, 0, 0);
-    color: rgb(223, 0, 0);
-    font-family: tahoma;    
-}
 
 
 

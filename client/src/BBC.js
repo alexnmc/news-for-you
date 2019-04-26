@@ -79,7 +79,7 @@ import {withButton} from './ButtonProvider'
                 <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
                 <Button1/>
                 <div className = 'buttonWrap'>
-                    <button className = 'logout' onClick = {this.props.logout}>Log out</button>
+                   
                     <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                 </div>
                
