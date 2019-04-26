@@ -15,10 +15,11 @@ class App extends Component {
             <div className = "div">
                 <Navbar/>
                 <Switch>
-                    <Route path = '/bbc' component = {BBC}/>
+                   
+                    <Route path = '/' component = {BBC}/>
                     <Route exact path = "/saved" component = {Saved}/>
                     <Route path = '/home' component = {Home}/>
-                    <Route path = '/' render = {props => !props.token ? <Redirect to = "/bbc"/> : <Home/>}/>
+                   
                 </Switch>
             </div>
         )
