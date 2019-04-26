@@ -28,7 +28,7 @@ import {withButton} from './ButtonProvider'
             {props.toggle ?
             
                 <div className = "navbarWrap2">
-                    <p className = 'topHead'>Top headlines from:</p>
+                    <p className = 'topHead'> Read top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>
                     <p onClick = {()=> getNews2("au", "Australia")}>Australia</p>
                     <p onClick = {()=> getNews2("at", "Austria")}>Austria</p>

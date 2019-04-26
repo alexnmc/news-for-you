@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Scroll from 'react-scroll'
 
 
 const ButtonContext = React.createContext()
@@ -15,7 +16,8 @@ class ButtonProvider extends Component {
             toggle: true,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "USA",
-            sourceName: this.name
+            sourceName: this.name,
+            toggle2: true,
             
         }
     }
@@ -36,6 +38,8 @@ class ButtonProvider extends Component {
 
     
     getNewsSource= (url, name) => {  
+        Scroll.animateScroll.scrollToTop()
+
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -56,7 +60,9 @@ class ButtonProvider extends Component {
    
    
     
-    getNewsCountry = (url, name) => {  
+    getNewsCountry = (url, name) => { 
+        Scroll.animateScroll.scrollToTop()
+
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -79,11 +85,28 @@ class ButtonProvider extends Component {
     handleToggle = () => {
         this.setState( prevState => {   
                     return { 
-                        toggle: true, 
+                        toggle: !prevState.toggle, 
+                        toggle2: true
                     }
         })
     }
     
+    
+    handleToggle2 = () => {
+        this.setState( prevState => {   
+            return { 
+                toggle: false, 
+                toggle2: !prevState.toggle2
+            }
+        })
+    }
+    
+    
+    deleteAll = (id) => {
+        axios.delete(`articles/delete/${id}`).then(response => {
+            alert(response.data)
+        })
+    }
     
     
     render() {
@@ -95,6 +118,8 @@ class ButtonProvider extends Component {
                     getNewsCountry: this.getNewsCountry,
                     getMount: this.getMount,
                     handleToggle: this.handleToggle,
+                    handleToggle2: this.handleToggle2,
+                    deleteAll: this.deleteAll,
                     ...this.state
                 }}>
                 {this.props.children}

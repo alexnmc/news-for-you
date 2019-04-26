@@ -7,9 +7,9 @@ import {withButton} from './ButtonProvider'
 const Navbar = (props) => {
     return (
         <div className="navbar">
-            {props.token ? <Link  to = '/'  onClick = {props.handleToggle}>Read</Link> : null}
+            <Link  to = '/bbc'  onClick = {props.handleToggle}>Read</Link>
             {props.token ? <Link to = "/saved">Saved</Link> : null}
-            {props.token ? <Link to = "/"  onClick = {props.logout}>Log out</Link> : null}
+            {props.token ? <Link to = "/bbc"  onClick = {props.logout}>Log out</Link> : <Link to = "/bbc" onClick = {props.handleToggle2}>Log in</Link> }
         </div>
     )
 }

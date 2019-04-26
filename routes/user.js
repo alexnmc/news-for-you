@@ -100,7 +100,7 @@ authRouter.delete('/', (req, res, next) => {
 
 
 
-authRouter.delete('/:id', (req, res, next) => {     //delete one by ID for admin use only
+authRouter.delete('/:id', (req, res, next) => {     //delete one by ID for delete account use only
      
     User.findOneAndDelete({_id: req.params.id} , (err, data) => {
        if (err) {

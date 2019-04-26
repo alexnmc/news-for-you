@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Navbar from './Navbar'
 import Saved from './Saved'
 import Home from './Home'
+import BBC from './BBC'
 import {withUser} from './UserProvider'
 
 
@@ -14,8 +15,10 @@ class App extends Component {
             <div className = "div">
                 <Navbar/>
                 <Switch>
+                    <Route path = '/bbc' component = {BBC}/>
                     <Route exact path = "/saved" component = {Saved}/>
-                    <Route path = '/' render = {props => props.token ? <Redirect to = "/home"/> : <Home/>}/>
+                    <Route path = '/home' component = {Home}/>
+                    <Route path = '/' render = {props => props.token ? <Redirect to = "/bbc"/> : <Home/>}/>
                 </Switch>
             </div>
         )

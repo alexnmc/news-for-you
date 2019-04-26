@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Button1 from './Button1'
+import Home from './Home'
 import {withUser} from './UserProvider'
 import {withButton} from './ButtonProvider'
 
@@ -16,17 +17,12 @@ import {withButton} from './ButtonProvider'
         }
     }
 
-    
-   
-    
     componentDidMount(){
         this.props.getMount()
        
     }
    
    
-
-    
     saveAll = () => {
         const final = this.props.articles
         for(let i = 0; i < final.length; i++){
@@ -35,13 +31,11 @@ import {withButton} from './ButtonProvider'
                 console.log(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
         }
-         alert("all articles were saved")
+         alert(`All articles from ${this.props.sourceName || this.props.name} are saved.`)
     }
     
     
-    
-    
-    save = (title, urlToImage, description) => {
+     save = (title, urlToImage, description) => {
         const article1 = {
             "title": title,
             "urlToImage": urlToImage,
@@ -54,6 +48,13 @@ import {withButton} from './ButtonProvider'
         .catch(err => console.log(err.response.data.errMsg))
     }
    
+
+    handleErase = () => {
+            
+        this.props.handleDelete2(this.props.user._id)
+        this.props.logout()
+        this.props.deleteAll(this.props.user._id)
+    }
    
    
     render(){
@@ -65,7 +66,7 @@ import {withButton} from './ButtonProvider'
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
-                    <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url)}>Save</button>
+                    {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url)} >Save </button>}
                     <a className = "readMore"  href={item.url}>read more</a>
                 </div>
             </div>
@@ -76,13 +77,16 @@ import {withButton} from './ButtonProvider'
             <div className = 'bbcDiv'>
                 <div className = "topSpace">
                 </div>
+                <div className = 'h1Wrapper'>
                 <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
-                <Button1/>
-                <div className = 'buttonWrap'>
-                   
-                    <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                 </div>
-               
+                <Button1/>
+                {!this.props.toggle2 && <Home/>}
+                <div className = 'buttonWrap'>
+                    <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login or Signup and save articles'}</h1>
+                    {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}
+                    {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
+                </div>
                 {article}
              </div>
         )

@@ -109,8 +109,7 @@ class UserProvider extends Component {
     
     handleDelete2 = (id) => {
         axios.delete(`/user/${id}`).then(res => {
-                
-           alert(res.data)
+            alert(res.data)
         })
     }
     
@@ -128,6 +127,7 @@ class UserProvider extends Component {
     }
 
     
+
     
     
     render() {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withUser} from './UserProvider'
-import BBC from './BBC'
+
 
 
 
@@ -26,73 +26,73 @@ class Home extends Component {
     
     render(){
         return(
+         
         <div>
-                {!this.props.token ? 
+            {!this.props.token  ?
                 <div className = 'homeWrap'>
-                <div className = "home">
-                    <h1 className = "newsforme">News for You</h1>
+                <h1 className = "newsforme">Create an account, cancel anytime:</h1>
+                    <div className = "home">
                         { this.props.toggle ?
-                        <div className = 'logIn'>
-                        <form  onSubmit = {this.props.handleLogin} className='loginForm'>
-                            <h4>Login:</h4>
+                            <div className = 'logIn'>
+                            <form  onSubmit = {this.props.handleLogin} className='loginForm'>
+                                <h4>Log in:</h4>
+                                <input
+                                    className = "login1"
+                                    type ='text'
+                                    name ='username'
+                                    placeholder  ='Username:'
+                                    value = {this.props.username}
+                                    onChange= {this.props.handleChange}
+                                />
+
+                                <input
+                                    className = "login1"
+                                    type ='text'
+                                    name ='password'
+                                    placeholder ='Password:'
+                                    value = {this.props.password}
+                                    onChange = {this.props.handleChange}
+                                />
+
+                                <button className = 'loginButton'>Log in</button>
+                            </form>
+                            <button className ='loginButton' onClick = {this.props.editToggler2}>Sign up</button>
+                    </div>
+                        
+                    :
+                    
+                    <div className = 'logIn'>
+                        <form onSubmit={this.props.handleSignup} className='signUp'>
+                            <h4>Sign Up:</h4>
+                            
                             <input
                                 className = "login1"
-                                type ='text'
-                                name ='username'
-                                placeholder  ='Username:'
-                                value = {this.props.username}
-                                onChange= {this.props.handleChange}
+                                type='text'
+                                name='username'
+                                placeholder ='enter a username:'
+                                value ={this.props.username}
+                                onChange ={this.props.handleChange}
                             />
 
                             <input
                                 className = "login1"
                                 type ='text'
                                 name ='password'
-                                placeholder ='Password:'
+                                placeholder ='choose your password:'
                                 value = {this.props.password}
                                 onChange = {this.props.handleChange}
                             />
-
-                            <button className = 'loginButton'>Login</button>
-                        </form>
-                        <button className ='loginButton' onClick = {this.props.editToggler2}>Sign up</button>
-                    </div>
-                    
-                    :
-                    
-                    <div className = 'logIn'>
-                    <form onSubmit={this.props.handleSignup} className='signUp'>
-                        <h4>Sign Up:</h4>
-                        
-                        <input
-                            className = "login1"
-                            type='text'
-                            name='username'
-                            placeholder ='enter a username:'
-                            value ={this.props.username}
-                            onChange ={this.props.handleChange}
-                        />
-
-                        <input
-                            className = "login1"
-                            type ='text'
-                            name ='password'
-                            placeholder ='choose your password:'
-                            value = {this.props.password}
-                            onChange = {this.props.handleChange}
-                        />
-                        <button className = 'loginButton'>Sign up</button>
-                    </form>   
+                            <button className = 'loginButton'>Sign up</button>
+                        </form>   
                     </div>            
                     }
                 </div>
             </div>
             : 
-            <BBC/>
-            }
+           null
+        }
         </div> 
-           
-            )
+        )
     }
 }
 
