@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Navbar from './Navbar'
 import Saved from './Saved'
 import Home from './Home'
@@ -15,11 +15,9 @@ class App extends Component {
             <div className = "div">
                 <Navbar/>
                 <Switch>
-                   
+                    <Route path = '/saved' component = {Saved}/>
                     <Route path = '/' component = {BBC}/>
-                    <Route exact path = "/saved" component = {Saved}/>
                     <Route path = '/home' component = {Home}/>
-                   
                 </Switch>
             </div>
         )

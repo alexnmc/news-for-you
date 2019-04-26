@@ -30,7 +30,6 @@ class ButtonProvider extends Component {
                 this.setState({
                     articles: response.data.articles,
                     sourceName: this.state.sourceName,
-                    
                 })
             })
     }
@@ -39,7 +38,6 @@ class ButtonProvider extends Component {
     
     getNewsSource= (url, name) => {  
         Scroll.animateScroll.scrollToTop()
-
         localStorage.setItem("url", url)
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?sources=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -52,17 +50,14 @@ class ButtonProvider extends Component {
                 return{ 
                     toggle: false,
                     sourceName: name,
-                    
                 }
             })
-        
     }
    
    
     
     getNewsCountry = (url, name) => { 
         Scroll.animateScroll.scrollToTop()
-
         localStorage.setItem("url", url) 
         localStorage.setItem("name", name)
         axios.get( `https://newsapi.org/v2/top-headlines?country=${url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -77,7 +72,6 @@ class ButtonProvider extends Component {
                     sourceName: name,
                 }
             })
-        
     }
         
     
@@ -92,6 +86,7 @@ class ButtonProvider extends Component {
     }
     
     
+    
     handleToggle2 = () => {
         this.setState( prevState => {   
             return { 
@@ -102,6 +97,7 @@ class ButtonProvider extends Component {
     }
     
     
+    
     deleteAll = (id) => {
         axios.delete(`articles/delete/${id}`).then(response => {
             alert(response.data)
@@ -110,7 +106,6 @@ class ButtonProvider extends Component {
     
     
     render() {
-      
         return (
             <ButtonContext.Provider
                 value={{
@@ -127,6 +122,7 @@ class ButtonProvider extends Component {
         )
     }
 }
+
 
 export default ButtonProvider
 

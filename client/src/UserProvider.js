@@ -78,7 +78,6 @@ class UserProvider extends Component {
 
 
     
-    
     handleSignup = (e) => {
         e.preventDefault()
             const newUser = {
@@ -116,6 +115,20 @@ class UserProvider extends Component {
     
     
     
+    logout2 = () => {
+        var answer = window.confirm("Are you sure you want to log out?")
+            if(answer){
+                this.setState({
+                    user:'',   // we logout by removing the token from state and local storage
+                    token: ''
+                })
+            localStorage.removeItem("user")
+            localStorage.removeItem("token")
+        }
+    }
+
+    
+    
     logout = () => {
         this.setState({
             user:'',   // we logout by removing the token from state and local storage
@@ -123,15 +136,11 @@ class UserProvider extends Component {
         })
         localStorage.removeItem("user")
         localStorage.removeItem("token")
-        console.log('logout')
     }
 
     
 
-    
-    
     render() {
-
         return (
 
             <Context.Provider
@@ -149,7 +158,8 @@ class UserProvider extends Component {
                    handleSignup: this.handleSignup,
                    handleChange:this.handleChange,
                    handleDelete2: this.handleDelete2,
-                   logout: this.logout
+                   logout: this.logout,
+                   logout2: this.logout2
                 }}>
                 {this.props.children}
             </Context.Provider>

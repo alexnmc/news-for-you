@@ -45,14 +45,17 @@ import {withUser} from './UserProvider'
     
     
     deleteAll = (id) => {
-        axios.delete(`articles/delete/${id}`).then(response => {
-            alert(response.data)
-        })
-       
-        this.setState({
-            articles: []
-         })
-    }
+        var answer = window.confirm("Are you sure you want to delete all your saved articles?")
+            if(answer){
+                axios.delete(`articles/delete/${id}`).then(response => {
+                alert(response.data)
+                })
+        
+                this.setState({
+                    articles: []
+                })
+        }
+    }   
 
     
    

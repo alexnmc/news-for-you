@@ -154,8 +154,6 @@ h1{
 
 
 
-
-
 .buttonWrap{
     display: flex;
     align-items: flex-end;
@@ -302,7 +300,7 @@ h4{
     height: 23pt;
     margin: 4pt;
     border-radius: 3px;
-    font-size: 12pt;
+    font-size: 10pt;
     background-color: rgba(255, 255, 255, 0.945);
     border: 2px solid rgba(68, 0, 0, 0.356);
     color: black;
