@@ -18,7 +18,7 @@ class App extends Component {
                     <Route path = '/bbc' component = {BBC}/>
                     <Route exact path = "/saved" component = {Saved}/>
                     <Route path = '/home' component = {Home}/>
-                    <Route path = '/' render = {props => props.token ? <Redirect to = "/bbc"/> : <Home/>}/>
+                    <Route path = '/' render = {props => !props.token ? <Redirect to = "/bbc"/> : <Home/>}/>
                 </Switch>
             </div>
         )
