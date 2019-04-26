@@ -24,8 +24,8 @@ import {withButton} from './ButtonProvider'
     
     return (
         <div className = "button2Wrap">
-            <button  className = "button2" onClick = {props.handleToggle}>Read</button>
-            { props.toggle ?
+           
+            {props.toggle ?
             
                 <div className = "navbarWrap2">
                     <p className = 'topHead'>Top headlines from:</p>

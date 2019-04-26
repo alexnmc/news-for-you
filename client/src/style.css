@@ -289,12 +289,12 @@ h4{
     flex-direction:column;
     padding: 1%;
     padding-top:0;
-    height: 77vh;
-    width: 26vh;
+    height: 81vh;
+    width: 30vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0.979);
     overflow: scroll;
-    margin-top: 50vh;
+    margin-top: 47vh;
     margin-left: 1%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
@@ -320,8 +320,8 @@ h4{
     cursor: pointer;
     position:fixed;
     border-radius: 2px;
-    margin-left: 5%;
-    margin-top: 9vh;
+    
+   
     background-color: rgba(0, 0, 0, 0);
     color: rgb(223, 0, 0);
     font-family: tahoma;    
@@ -369,7 +369,7 @@ p:hover{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     padding: 7px;
-    width: 24vh;
+    width: 27vh;
     height: auto;
     font-size: 2.3vh;
 }
