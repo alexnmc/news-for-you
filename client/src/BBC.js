@@ -13,8 +13,7 @@ import {withButton} from './ButtonProvider'
         super(props)
         this.state = {
            
-            userID: this.props.user._id,
-            sourceName: ''
+           sourceName: ''
         }
     }
 
@@ -27,7 +26,7 @@ import {withButton} from './ButtonProvider'
     saveAll = () => {
         const final = this.props.articles
         for(let i = 0; i < final.length; i++){
-            final[i].userID = this.state.userID 
+            final[i].userID = this.props.user._id
             axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
                 console.log(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
@@ -43,7 +42,7 @@ import {withButton} from './ButtonProvider'
             description: description,
             url: url,
             source: {name: source},
-            userID: this.state.userID
+            userID: this.props.user._id
         }
         
         axios.post(`/articles/${title}`, article1).then(response => {

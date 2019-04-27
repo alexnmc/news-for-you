@@ -8,8 +8,9 @@ import {withUser} from './UserProvider'
     constructor(props){
         super(props)
         this.state = {
-            articles:[],
-            idNumber : this.props.user._id
+           
+            idNumber : this.props.user._id,
+            articles:[]
 
         }
     }
