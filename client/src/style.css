@@ -18,20 +18,20 @@
 a{
     text-decoration: none;
     font-size: 14pt;
-    color: rgba(198, 0, 0, 0.824);
+    color: rgb(198, 0, 0);
     margin: 3vw;
    
 }
 
 
 a:hover{
-    color:rgb(255, 81, 0);
+    color:rgb(255, 118, 118);
 }
 
 
 h1{
     margin-bottom:7px;
-    color:rgba(184, 0, 0, 0.865);
+    color:rgba(174, 2, 2, 0.968);
 }
 
 
@@ -41,7 +41,7 @@ img{
 
 
 .sourceName{
-    color:rgba(177, 1, 1, 0.934);
+    color:rgba(201, 0, 0, 0.913);
     font-family: helvetica;
     height: 5vh;
     padding-top: 5pt;
@@ -434,14 +434,17 @@ p:hover{
 
 .topHead{
     position: fixed;
-    background-color:  rgba(161, 0, 0, 0.906);
-    color:rgba(240, 240, 240, 0.961);
+    background-color:  rgba(184, 0, 0, 0.947);
+    color:rgb(240, 240, 240);
     padding: 7px;
     width: 27vh;
     height: auto;
     font-size: 2.3vh;
 }
 
+.topHead:hover{
+    
+}
 
 .topHead2{
     background-color:  rgb(161, 0, 0);
@@ -464,4 +467,8 @@ p:hover{
     background-size: cover;
     background-position: center;
     position: fixed;
+}
+
+h2{
+    margin-top:2pt;
 }
