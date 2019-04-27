@@ -18,7 +18,7 @@
 a{
     text-decoration: none;
     font-size: 14pt;
-    color: rgb(223, 0, 0);
+    color: rgba(198, 0, 0, 0.824);
     margin: 3vw;
    
 }
@@ -31,7 +31,7 @@ a:hover{
 
 h1{
     margin-bottom:7px;
-    color:rgb(190, 0, 0);
+    color:rgba(184, 0, 0, 0.865);
 }
 
 
@@ -41,7 +41,7 @@ img{
 
 
 .sourceName{
-    color: rgb(180, 0, 0);
+    color:rgba(177, 1, 1, 0.934);
     font-family: helvetica;
     height: 5vh;
     padding-top: 5pt;
@@ -53,7 +53,7 @@ img{
 
 
 .sourceName2{
-    color: rgb(180, 0, 0);
+    color: rgba(97, 97, 97, 0.783);
     font-family: helvetica;
     position: fixed;
     height: 5vh;
@@ -65,7 +65,7 @@ img{
 
 
 .sourceName3{
-    color: rgb(180, 0, 0);
+    color: rgba(87, 87, 87, 0.831);
     font-family: helvetica;
     position: fixed;
     height: 5vh;
@@ -102,7 +102,7 @@ h1{
     text-align: center;
     margin-top: -15%;
     margin-bottom: 5vh;
-    color:rgb(73, 73, 73);
+    color:rgba(73, 73, 73, 0.845);
     animation: fade 3s;
     width:25vw;
 }
@@ -434,8 +434,8 @@ p:hover{
 
 .topHead{
     position: fixed;
-    background-color:  rgb(161, 0, 0);
-    color:rgb(240, 240, 240);
+    background-color:  rgba(161, 0, 0, 0.906);
+    color:rgba(240, 240, 240, 0.961);
     padding: 7px;
     width: 27vh;
     height: auto;
