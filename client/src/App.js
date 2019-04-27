@@ -15,9 +15,10 @@ class App extends Component {
             <div className = "div">
                 <Navbar/>
                 <Switch>
+                   
                     <Route path = '/saved' component = {Saved}/>
-                    <Route path = '/home' component = {Home}/>
                     <Route path = '/' component = {BBC}/>
+                   
                 </Switch>
             </div>
         )
