@@ -332,23 +332,24 @@ h4{
 
 
 .login1{
-    width: 120pt;
-    height: 23pt;
-    margin: 4pt;
+    width: 115pt;
+    height: 22pt;
+    margin: 2pt;
     border-radius: 3px;
     font-size: 10pt;
     background-color: rgba(255, 255, 255, 0.945);
     border: 2px solid rgba(68, 0, 0, 0.356);
     color: black;
+    padding:2pt;
 }
 
 
 .loginButton{
-    width:120px;
-    height: 22pt;
+    width:80pt;
+    height: 21pt;
     background-color: rgb(73, 73, 73);
     color: rgb(243, 243, 243);
-    font-size: 13pt;
+    font-size: 12pt;
     cursor: pointer;
     margin-top: 5pt;
     border: 0px;
