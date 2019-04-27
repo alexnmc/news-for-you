@@ -125,6 +125,7 @@ class UserProvider extends Component {
             localStorage.removeItem("user")
             localStorage.removeItem("token")
         }
+        
     }
 
     

@@ -17,7 +17,7 @@ import {withUser} from './UserProvider'
 
    
     componentDidMount(){
-        this.getArticles(this.state.idNumber)
+        this.getArticles(this.props.user._id)
     }
    
     

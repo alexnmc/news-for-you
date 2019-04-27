@@ -27,6 +27,7 @@ class ButtonProvider extends Component {
     getMount = () => {
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
+                
                 this.setState({
                     articles: response.data.articles,
                     sourceName: this.state.sourceName,
@@ -50,6 +51,8 @@ class ButtonProvider extends Component {
                 return{ 
                     toggle: false,
                     sourceName: name,
+                    url: localStorage.getItem("url"), //returns to the last page viewed
+                    name: localStorage.getItem("name"),
                 }
             })
     }
@@ -70,6 +73,8 @@ class ButtonProvider extends Component {
                 return { 
                     toggle: false,
                     sourceName: name,
+                    url: localStorage.getItem("url"), 
+                    name: localStorage.getItem("name"),
                 }
             })
     }
@@ -83,6 +88,7 @@ class ButtonProvider extends Component {
                         toggle2: true
                     }
         })
+        this.getMount()
     }
     
     
@@ -94,6 +100,7 @@ class ButtonProvider extends Component {
                 toggle2: !prevState.toggle2
             }
         })
+        this.getMount()
     }
     
     

@@ -17,6 +17,8 @@ import {withButton} from './ButtonProvider'
         }
     }
 
+    
+    
     componentDidMount(){
         this.props.getMount()
        
@@ -54,12 +56,11 @@ import {withButton} from './ButtonProvider'
 
     handleErase = () => {
         var answer = window.confirm("This will permanently delete you account, are you sure you want to proceed?")
-    if(answer){
-        this.props.handleDelete2(this.props.user._id)
-        this.props.logout()
-        this.props.deleteAll(this.props.user._id)
-    }
-    
+            if(answer){
+                this.props.handleDelete2(this.props.user._id)
+                this.props.logout()
+                this.props.deleteAll(this.props.user._id)
+            }
     }
    
    
