@@ -35,7 +35,6 @@ import {withUser} from './UserProvider'
         axios.delete(`/articles/${id}`).then(response => {
              alert(response.data)
         })
-
         this.setState({
             articles: this.state.articles.filter(item => item._id !== id)
         })
@@ -65,11 +64,14 @@ import {withUser} from './UserProvider'
         return(
            <div key = {Math.random()}>
                <div className = "newsDiv2" >
-                    <h1> {item.title}</h1>
+                    <h1 className = 'savedH1'> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
-                    <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
-                    <a className = "readMore"  href={item.url}>read more</a>
+                    <div className = 'bottomWrap'>
+                        <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
+                        <h2 className = 'name2'>{item.source.name}</h2>
+                        <a className = "readMore2"  href={item.url}>read more</a>
+                    </div>
                 </div>
            </div>
         )

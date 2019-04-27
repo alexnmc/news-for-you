@@ -21,6 +21,12 @@ const articlesSchema = new Schema({
         type: String
     },
 
+    source: {
+        name: {
+            type: String
+        }
+    },
+
     userID:{
         type: String
     }

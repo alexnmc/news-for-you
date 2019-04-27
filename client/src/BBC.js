@@ -13,7 +13,8 @@ import {withButton} from './ButtonProvider'
         super(props)
         this.state = {
            
-            userID: this.props.user._id
+            userID: this.props.user._id,
+            sourceName: ''
         }
     }
 
@@ -26,7 +27,7 @@ import {withButton} from './ButtonProvider'
     saveAll = () => {
         const final = this.props.articles
         for(let i = 0; i < final.length; i++){
-            final[i].userID = this.state.userID
+            final[i].userID = this.state.userID 
             axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
                 console.log(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
@@ -35,13 +36,16 @@ import {withButton} from './ButtonProvider'
     }
     
     
-     save = (title, urlToImage, description) => {
+     save = (title, urlToImage, description, url, source) => {
         const article1 = {
-            "title": title,
-            "urlToImage": urlToImage,
-            "description": description,
-            "userID": this.state.userID
+            title: title,
+            urlToImage: urlToImage,
+            description: description,
+            url: url,
+            source: {name: source},
+            userID: this.state.userID
         }
+        
         axios.post(`/articles/${title}`, article1).then(response => {
             alert(response.data)
         })
@@ -69,7 +73,9 @@ import {withButton} from './ButtonProvider'
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
-                    {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url)} >Save </button>}
+                    <h2 className = "name">{item.source.name}</h2>
+                    <div className = "topP" onClick = {()=> this.scrolling()}></div>
+                    {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button>}
                     <a className = "readMore"  href={item.url}>read more</a>
                 </div>
             </div>

@@ -63,6 +63,7 @@ img{
     background-color: rgba(255, 255, 255, 0);
 }
 
+
 .sourceName3{
     color: rgb(180, 0, 0);
     font-family: helvetica;
@@ -84,8 +85,14 @@ img{
     position: fixed;
 }
 
+
 h1{
     font-size: 16pt;
+}
+
+
+.savedH1{
+    font-size: 15pt;
 }
 
 
@@ -124,6 +131,13 @@ h1{
 }
 
 
+.bottomWrap{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-top: 2pt;
+}
+
 .home{
     height:auto;
     width: auto;
@@ -134,7 +148,6 @@ h1{
     justify-content: center;
     background-color: rgba(255, 255, 250);
     animation: move2 1.2s;
-   
 }
 
 
@@ -203,7 +216,6 @@ button{
     background-color: rgb(0, 192, 0);
     font-size: 15pt;
     cursor: pointer;
-    margin-top:10pt;
     animation: fade 2s;  
 }
 
@@ -214,6 +226,13 @@ button{
     color: white;
     width: 6vw;
     font-size: 12pt;
+}
+
+
+.readMore2{
+    margin: 0px;
+    color: rgb(0, 0, 126);
+    font-size:14pt;
 }
 
 
@@ -287,6 +306,17 @@ button{
 }
 
 
+.name{
+    margin-top: 0.5vh;
+    text-align: center;
+    color: rgb(171, 0, 0);
+}
+
+.name2{
+    color: rgb(171, 0, 0);
+    margin: auto;
+
+}
 
 h4{
     margin-bottom: 5%;
@@ -321,10 +351,11 @@ h4{
 
 
 .readMore{
-    color: rgb(0, 0, 145);
+    color: rgb(0, 0, 123);
     font-size: 14pt;
     font-weight: 500;
     cursor: pointer;
+    margin-left: 8.5vw;
 }
 
 
