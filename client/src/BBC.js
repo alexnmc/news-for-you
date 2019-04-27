@@ -73,10 +73,11 @@ import {withButton} from './ButtonProvider'
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
-                    <h2 className = "name">{item.source.name}</h2>
-                    <div className = "topP" onClick = {()=> this.scrolling()}></div>
-                    {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button>}
-                    <a className = "readMore"  href={item.url}>read more</a>
+                    <div className = 'bottomWrap'>
+                        {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button>}
+                        <h2 className = "name">{item.source.name}</h2>
+                        <a className = "readMore"  href={item.url}>read more</a>
+                    </div>
                 </div>
             </div>
         )
