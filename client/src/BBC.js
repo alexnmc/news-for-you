@@ -4,6 +4,7 @@ import Button1 from './Button1'
 import Home from './Home'
 import {withUser} from './UserProvider'
 import {withButton} from './ButtonProvider'
+import Scroll from 'react-scroll'
 
 
 
@@ -96,6 +97,8 @@ import {withButton} from './ButtonProvider'
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login or Signup and save articles'}</h1>
                     {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
+                    <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
+
                 </div>
                 {article}
              </div>

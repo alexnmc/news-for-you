@@ -42,7 +42,6 @@ class UserProvider extends Component {
             
         })
         .catch(err => alert(err.response.data.errMsg))
-        
     }
 
     
@@ -68,7 +67,6 @@ class UserProvider extends Component {
             username: this.state.username,
             password: this.state.password
         }
-
         this.login(newUser) // calling the login function
         this.setState({
             username: '',
@@ -84,7 +82,6 @@ class UserProvider extends Component {
                 username: this.state.username,
                 password: this.state.password
             }
-
             this.signup(newUser)
             this.setState({
                 username: '',
