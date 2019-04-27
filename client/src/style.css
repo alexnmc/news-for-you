@@ -214,7 +214,7 @@ h1{
 
 
 button{
-    width: 75pt;
+    width: 74pt;
     height: 19pt;
     background-color: rgb(0, 201, 0);
     font-size: 12pt;
@@ -237,7 +237,7 @@ button{
 .readMore2{
     margin: 0px;
     color: rgb(0, 0, 126);
-    font-size:14pt;
+    font-size:12pt;
 }
 
 
@@ -358,7 +358,7 @@ h4{
 
 .readMore{
     color: rgb(0, 0, 123);
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 500;
     cursor: pointer;
     margin: 0px;
