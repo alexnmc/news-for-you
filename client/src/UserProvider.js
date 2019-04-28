@@ -23,7 +23,6 @@ class UserProvider extends Component {
 
     
     
-    
     editToggler2 = () => {
         this.setState(prevState => {
             return {
@@ -33,8 +32,6 @@ class UserProvider extends Component {
     }
 
 
-   
-    
     signup = userInfo => {
         axios.post('/user/signup', userInfo).then(res => {
             const { token, user } = res.data
@@ -46,8 +43,6 @@ class UserProvider extends Component {
         .catch(err => alert(err.response.data.errMsg))
     }
 
-    
-    
     
     login = userInfo => {
         axios.post('/user/login', userInfo).then(res => {
@@ -61,8 +56,6 @@ class UserProvider extends Component {
     }
    
    
-   
-    
     handleLogin = (e) => {   // login method, we send the username and password entered in the input fields to the database 
         e.preventDefault()
         const newUser = {
@@ -78,7 +71,6 @@ class UserProvider extends Component {
     }
 
 
-    
     handleSignup = (e) => {
         e.preventDefault()
             const newUser = {
@@ -96,7 +88,6 @@ class UserProvider extends Component {
     }
 
 
-    
     handleChange = (e) => {
         e.preventDefault()
         const { name, value } = e.target
@@ -106,14 +97,11 @@ class UserProvider extends Component {
     }
 
     
-    
     handleDelete2 = (id) => {
         axios.delete(`/user/${id}`).then(res => {
             alert(res.data)
         })
     }
-    
-    
     
     
     logout2 = () => {
@@ -126,10 +114,8 @@ class UserProvider extends Component {
             localStorage.removeItem("user")
             localStorage.removeItem("token")
         }
-        
     }
 
-    
     
     logout = () => {
         this.setState({
@@ -141,10 +127,8 @@ class UserProvider extends Component {
     }
 
     
-
     render() {
         return (
-
             <Context.Provider
                 value={{
                    username:this.state.username,
@@ -170,7 +154,6 @@ class UserProvider extends Component {
 }
 
 export default withButton(UserProvider)
-
 
 
 export const withUser= C => props => (
