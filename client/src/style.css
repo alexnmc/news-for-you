@@ -20,7 +20,6 @@ a{
     font-size: 14pt;
     color: rgb(198, 0, 0);
     margin: 3vw;
-   
 }
 
 
@@ -40,6 +39,7 @@ img{
 }
 
 
+
 .sourceName{
     color:rgba(201, 0, 0, 0.913);
     font-family: helvetica;
@@ -48,7 +48,6 @@ img{
     font-size:16pt;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
-    
 }
 
 
@@ -378,7 +377,7 @@ h4{
     background-color: rgba(255, 255, 255, 0.979);
     overflow: scroll;
     margin-top: 47vh;
-    margin-left: 1%;
+    margin-left: 2%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
     animation: movein 1s, fade 2.8s;
@@ -392,7 +391,7 @@ h4{
     
    @keyframes movein {
     from{margin-left: -10%}
-    to{ margin-left:1%}
+    to{ margin-left:2%}
    }
  
 
