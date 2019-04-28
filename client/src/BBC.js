@@ -19,10 +19,8 @@ import Scroll from 'react-scroll'
     }
 
     
-    
     componentDidMount(){
         this.props.getMount()
-       
     }
    
    
@@ -38,7 +36,7 @@ import Scroll from 'react-scroll'
     }
     
     
-     save = (title, urlToImage, description, url, source) => {
+    save = (title, urlToImage, description, url, source) => {
         const article1 = {
             title: title,
             urlToImage: urlToImage,
@@ -47,7 +45,6 @@ import Scroll from 'react-scroll'
             source: {name: source},
             userID: this.props.user._id
         }
-        
         axios.post(`/articles/${title}`, article1).then(response => {
             alert(response.data)
         })
@@ -55,6 +52,7 @@ import Scroll from 'react-scroll'
     }
    
 
+    
     handleErase = () => {
         var answer = window.confirm("This will permanently delete you account, are you sure you want to proceed?")
             if(answer){
@@ -89,7 +87,7 @@ import Scroll from 'react-scroll'
                 <div className = "topSpace">
                 </div>
                 <div className = 'h1Wrapper'>
-                <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
+                    <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
                 </div>
                 <Button1/>
                 {!this.props.toggle2 && <Home/>}
@@ -98,10 +96,9 @@ import Scroll from 'react-scroll'
                     {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
-
                 </div>
                 {article}
-             </div>
+            </div>
         )
     }
 }

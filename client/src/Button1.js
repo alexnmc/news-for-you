@@ -7,26 +7,18 @@ import {withButton} from './ButtonProvider'
        
         function getNews(url, name) {
             props.getNewsSource(url, name)
-            if(props.split){
-                return  props.scrolling()
-            }
         }
     
     
         function getNews2(url, name) {
             props.getNewsCountry(url, name)
-            if(props.split){
-                return  props.scrolling()
-            }
         }
        
     
     
     return (
         <div className = "button2Wrap">
-           
-            {props.toggle ?
-            
+           {props.toggle ?
                 <div className = "navbarWrap2">
                     <p className = 'topHead'> Read top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>

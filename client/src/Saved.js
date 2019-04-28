@@ -8,10 +8,8 @@ import {withUser} from './UserProvider'
     constructor(props){
         super(props)
         this.state = {
-           
             idNumber : this.props.user._id,
             articles:[]
-
         }
     }
 
@@ -87,7 +85,6 @@ import {withUser} from './UserProvider'
                 </div>
                 <h1 className = 'sourceName2'>{ this.state.articles.length ? 'Your saved articles:' : null}</h1>
                 </div>
-                
                 {this.state.articles.length ? article : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
             </div>

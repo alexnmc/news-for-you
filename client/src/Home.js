@@ -3,13 +3,10 @@ import {withUser} from './UserProvider'
 
 
 
-
-
 class Home extends Component {
     constructor(props){
         super(props)
         this.state = {
-            
             
         }
     }
@@ -26,8 +23,7 @@ class Home extends Component {
     
     render(){
         return(
-         
-        <div>
+         <div>
             {!this.props.token  ?
                 <div className = 'homeWrap'>
                 <h1 className = "newsforme">Create an account, cancel anytime:</h1>
