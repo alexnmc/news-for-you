@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import {withButton} from './ButtonProvider'
+
 
 
 const Context = React.createContext()
@@ -72,6 +74,7 @@ class UserProvider extends Component {
             username: '',
             password: ''
         })
+        this.props.handleToggle()
     }
 
 
@@ -89,6 +92,7 @@ class UserProvider extends Component {
             })
 
         this.editToggler2()
+        this.props.handleToggle()
     }
 
 
@@ -165,7 +169,7 @@ class UserProvider extends Component {
     }
 }
 
-export default UserProvider
+export default withButton(UserProvider)
 
 
 
