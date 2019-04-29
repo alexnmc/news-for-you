@@ -28,6 +28,7 @@ import Scroll from 'react-scroll'
         const final = this.props.articles
         for(let i = 0; i < final.length; i++){
             final[i].userID = this.props.user._id
+            final[i].channel = this.props.name
             axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
                 console.log(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
@@ -43,6 +44,7 @@ import Scroll from 'react-scroll'
             description: description,
             url: url,
             source: {name: source},
+            channel: this.props.name,
             userID: this.props.user._id
         }
         axios.post(`/articles/${title}`, article1).then(response => {
@@ -98,6 +100,7 @@ import Scroll from 'react-scroll'
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
                 </div>
                 {article}
+               
             </div>
         )
     }

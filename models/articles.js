@@ -29,6 +29,10 @@ const articlesSchema = new Schema({
 
     userID:{
         type: String
+    },
+
+    channel:{
+        type: String
     }
 })
 

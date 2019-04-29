@@ -9,7 +9,8 @@ import {withUser} from './UserProvider'
         super(props)
         this.state = {
             idNumber : this.props.user._id,
-            articles:[]
+            articles:[],
+            
         }
     }
 
@@ -32,7 +33,7 @@ import {withUser} from './UserProvider'
     
     delete = (id) => {
         axios.delete(`/articles/${id}`).then(response => {
-             alert(response.data)
+             console.log(response.data)
         })
         this.setState({
             articles: this.state.articles.filter(item => item._id !== id)
@@ -48,7 +49,6 @@ import {withUser} from './UserProvider'
                 axios.delete(`articles/delete/${id}`).then(response => {
                 alert(response.data)
                 })
-        
                 this.setState({
                     articles: []
                 })
@@ -56,27 +56,49 @@ import {withUser} from './UserProvider'
     }   
 
     
-   
-   
+    
     render(){
-        const article = this.state.articles.map(item => {
+        
+    let names = []
+    for(let i = 0; i < this.state.articles.length; i++) {
+        if(!names.includes(this.state.articles[i].channel)){
+          names.push(this.state.articles[i].channel)
+        }}
+    
+    
+        const container = names.map(item2 => {
         return(
-           <div key = {Math.random()}>
-               <div className = "newsDiv2" >
-                    <h1 className = 'savedH1'> {item.title}</h1>
-                    <img alt = '' src={item.urlToImage} />
-                    <h2> {item.description}</h2>
-                    <div className = 'bottomWrap'>
-                        <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
-                        <h2 className = 'name2'>{item.source.name}</h2>
-                        <a className = "readMore2"  href={item.url}>read more</a>
-                    </div>
+            <div>
+                <h1 className = 'containerH1'>{item2}</h1>
+                <div className = 'container'>
+                    { this.state.articles.map(item  => {
+                            if(item.channel === item2){
+                                return(
+                                    <div key = { Math.random()} >
+                                        <div className = "newsDiv2" >
+                                            <h1 className = 'savedH1'> {item.title}</h1>
+                                            <img alt = '' src={item.urlToImage} />
+                                            <h2> {item.description}</h2>
+                                            <div className = 'bottomWrap'>
+                                                <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
+                                                <h2 className = 'name2'>{item.source.name}</h2>
+                                                <a className = "readMore2"  href={item.url}>read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                )
+                            }
+                      })
+                    }
                 </div>
-           </div>
+            </div>
         )
     })
-       
-        return(
+
+         
+    
+    return(
             <div>
             <div className = 'saved'>
                 <div className = "topSpace2">
@@ -85,7 +107,7 @@ import {withUser} from './UserProvider'
                 </div>
                 <h1 className = 'sourceName2'>{ this.state.articles.length ? 'Your saved articles:' : null}</h1>
                 </div>
-                {this.state.articles.length ? article : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
+                {this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
             </div>
         )

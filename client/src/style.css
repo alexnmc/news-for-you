@@ -118,7 +118,8 @@ h1{
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
-      font-family: 'helvetica'
+      font-family: 'helvetica';
+      
 }
 
 
@@ -128,7 +129,8 @@ h1{
     font-size: 10px;
     margin: 2vw;
     background-color: white;
-    font-family: 'helvetica'
+    font-family: 'helvetica';
+   
 }
 
 
@@ -195,12 +197,21 @@ h1{
 }
 
 
-.saved{
+.container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+
+.containerH1{
+    font-family: 'tahoma';
+    font-size: 15pt;
+    color: rgba(142, 142, 142, 0.925);
+    margin-left:2vw;
+
 }
 
 
@@ -218,7 +229,6 @@ button{
     background-color: rgb(0, 201, 0);
     font-size: 12pt;
     cursor: pointer;
-    animation: fade 2s; 
     margin-top: 3pt; 
 }
 
