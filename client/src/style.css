@@ -119,7 +119,6 @@ h1{
       margin-bottom: 10vh;
       background-color: white;
       font-family: 'helvetica';
-      
 }
 
 
@@ -207,10 +206,12 @@ h1{
 
 
 .containerH1{
-    font-family: 'tahoma';
-    font-size: 15pt;
+    font-family: 'helvetica';
+    font-size: 16pt;
     color: rgba(114, 114, 114, 0.968);
-    margin-left:2vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    margin-bottom: 0px;
 
 }
 
