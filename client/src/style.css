@@ -209,7 +209,7 @@ h1{
 .containerH1{
     font-family: 'tahoma';
     font-size: 15pt;
-    color: rgba(142, 142, 142, 0.925);
+    color: rgba(114, 114, 114, 0.968);
     margin-left:2vw;
 
 }
@@ -451,9 +451,7 @@ p:hover{
     font-size: 2.3vh;
 }
 
-.topHead:hover{
-    
-}
+
 
 .topHead2{
     background-color:  rgb(161, 0, 0);
