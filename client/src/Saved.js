@@ -60,23 +60,23 @@ import {withUser} from './UserProvider'
     render(){
         
     let names = []
-    for(let i = 0; i < this.state.articles.length; i++) {
+    for(let i = 0; i < this.state.articles.length; i++){
         if(!names.includes(this.state.articles[i].channel)){
-          names.push(this.state.articles[i].channel)
+                names.push(this.state.articles[i].channel)
         }}
     
     
         const container = names.map(item2 => {
         return(
             <div>
-                <h1 className = 'containerH1'>{item2}</h1>
+                <h1 className = 'containerH1'>{`Saved from ${item2}`}</h1>
                 <div className = 'container'>
                     { this.state.articles.map(item  => {
                             if(item.channel === item2){
                                 return(
-                                    <div key = { Math.random()} >
-                                        <div className = "newsDiv2" >
-                                            <h1 className = 'savedH1'> {item.title}</h1>
+                                    <div key = {Math.random()} >
+                                        <div className = "newsDiv2">
+                                            <h1 className = 'savedH1'>{item.title}</h1>
                                             <img alt = '' src={item.urlToImage} />
                                             <h2> {item.description}</h2>
                                             <div className = 'bottomWrap'>
