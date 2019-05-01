@@ -257,11 +257,12 @@ button{
     cursor: pointer;
     position:fixed;
     border-radius: 2px;
-    margin-left: -5vw;
+    margin-left: -20vw;
     margin-top: 9vh;
     background-color: rgba(0, 0, 0, 0);
-    color: rgba(0, 140, 30, 0.945);
+    color: rgb(0, 179, 39);
     font-family: tahoma;  
+    font-weight: bolder;
     animation: fade 2s;  
 }
 
@@ -463,7 +464,7 @@ p:hover{
 
 .topP{
     margin-top: 85vh;
-    margin-left:-22vw;
+    margin-left:-23vw;
     height: 25pt;
     width: 25pt;
     cursor:pointer;
