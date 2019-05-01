@@ -52,7 +52,7 @@ img{
 
 
 .sourceName2{
-    color: rgba(87, 87, 87, 0.824);
+    color: rgba(67, 67, 67, 0.824);
     font-family: helvetica;
     position: fixed;
     height: 5vh;
@@ -109,8 +109,8 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 450pt;
-      padding:20px;
+      width: 410pt;
+      padding:10px;
       height: auto;
       font-size: 12px;
       margin:auto;
@@ -129,7 +129,6 @@ h1{
     margin: 2vw;
     background-color: white;
     font-family: 'helvetica';
-   
 }
 
 
@@ -139,6 +138,7 @@ h1{
     height: auto;
     margin-top: 2pt;
 }
+
 
 .home{
     height:auto;
@@ -208,11 +208,10 @@ h1{
 .containerH1{
     font-family: 'helvetica';
     font-size: 17pt;
-    color: rgba(114, 114, 114, 0.968);
+    color: rgba(67, 67, 67, 0.824);
     margin-top: 3vh;
     margin-left: 2vw;
     margin-bottom: 0px;
-
 }
 
 
@@ -318,7 +317,6 @@ button{
     width:130pt;
     font-size: 20pt;
     font-family: helvetica;
-    
 }
 
 
@@ -373,7 +371,6 @@ h4{
     font-weight: 500;
     cursor: pointer;
     margin: 0px;
-   
 }
 
 
@@ -392,7 +389,6 @@ h4{
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
     animation: movein 1s, fade 2.8s;
-
 }
 
    @keyframes fade {

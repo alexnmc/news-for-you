@@ -4,7 +4,7 @@ import {withUser} from './UserProvider'
 
 
 
- class Saved extends Component { // no need to exposrt on the bottom of the page
+class Saved extends Component { // no need to exposrt on the bottom of the page
     constructor(props){
         super(props)
         this.state = {
@@ -14,7 +14,6 @@ import {withUser} from './UserProvider'
         }
     }
 
-   
     componentDidMount(){
         this.getArticles(this.props.user._id)
     }
@@ -30,7 +29,6 @@ import {withUser} from './UserProvider'
     }
     
     
-    
     delete = (id) => {
         axios.delete(`/articles/${id}`).then(response => {
              console.log(response.data)
@@ -41,8 +39,6 @@ import {withUser} from './UserProvider'
     }
     
 
-    
-    
     deleteAll = (id) => {
         var answer = window.confirm("Are you sure you want to delete all your saved articles?")
             if(answer){
@@ -56,7 +52,6 @@ import {withUser} from './UserProvider'
     }   
 
     
-    
     render(){
         
     let names = []
@@ -65,16 +60,15 @@ import {withUser} from './UserProvider'
                 names.push(this.state.articles[i].channel)
         }}
     
-    
-        const container = names.map(item2 => {
+    const container = names.map(item2 => {
         return(
             <div>
                 <h1 className = 'containerH1'>{`Saved from ${item2}`}</h1>
                 <div className = 'container'>
-                    { this.state.articles.map(item  => {
+                    {this.state.articles.map(item  => {
                             if(item.channel === item2){
                                 return(
-                                    <div key = {Math.random()} >
+                                    <div key = {Math.random()}>
                                         <div className = "newsDiv2">
                                             <h1 className = 'savedH1'>{item.title}</h1>
                                             <img alt = '' src={item.urlToImage} />
@@ -96,8 +90,6 @@ import {withUser} from './UserProvider'
         )
     })
 
-         
-    
     return(
             <div>
             <div className = 'saved'>
@@ -105,12 +97,12 @@ import {withUser} from './UserProvider'
                 <div>
                 <button className = 'deleteAll' onClick = {() => this.deleteAll(this.state.idNumber)}>Delete all</button>
                 </div>
-                <h1 className = 'sourceName2'>{ this.state.articles.length ? 'Your saved articles:' : null}</h1>
+                <h1 className = 'sourceName2'>{this.state.articles.length ? 'Your saved articles:' : null}</h1>
                 </div>
                 {this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
             </div>
-        )
+    )
     }
 }
 
