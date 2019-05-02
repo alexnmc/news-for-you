@@ -81,7 +81,7 @@ class ButtonProvider extends Component {
     handleToggle = () => {
         this.setState( prevState => {   
                     return { 
-                        toggle: !prevState.toggle,
+                        toggle: true,
                     }
         })
         this.getMount()
