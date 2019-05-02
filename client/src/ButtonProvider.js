@@ -46,7 +46,7 @@ class ButtonProvider extends Component {
         })
             this.setState(prevState=>{
                 return{ 
-                    toggle: false,
+                    
                     sourceName: name,
                     url: localStorage.getItem("url"), //returns to the last page viewed
                     name: localStorage.getItem("name"),
@@ -68,7 +68,7 @@ class ButtonProvider extends Component {
         })
             this.setState(prevState=>{  
                 return { 
-                    toggle: false,
+                   
                     sourceName: name,
                     url: localStorage.getItem("url"), 
                     name: localStorage.getItem("name"),
