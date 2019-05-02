@@ -94,7 +94,7 @@ import Scroll from 'react-scroll'
                 <Button1/>
                 {!this.props.toggle2 && <Home/>}
                 <div className = 'buttonWrap'>
-                    <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login or Signup and save articles'}</h1>
+                    <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login and save articles'}</h1>
                     {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>

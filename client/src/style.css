@@ -20,12 +20,23 @@ a{
     font-size: 14pt;
     color: rgb(198, 0, 0);
     margin: 3vw;
+    animation: fade 2.5s;
 }
 
 
 a:hover{
     color:rgb(255, 118, 118);
 }
+
+
+.navbarP{
+    color:white;
+    background-color: rgb(179, 0, 0);
+    cursor: auto;
+    font-size: 16pt;
+
+}
+
 
 
 h1{
@@ -41,10 +52,9 @@ img{
 
 
 .sourceName{
-    color:rgba(201, 0, 0, 0.913);
+    color: rgb(170, 0, 0);
     font-family: helvetica;
     height: 5vh;
-    padding-top: 5pt;
     font-size:16pt;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
@@ -64,7 +74,7 @@ img{
 
 
 .sourceName3{
-    color: rgba(87, 87, 87, 0.829);
+    color: rgba(71, 71, 71, 0.966);
     font-family: helvetica;
     position: fixed;
     height: 5vh;
@@ -72,6 +82,7 @@ img{
     padding-top: 5pt;
     font-size: 15pt;
     margin-left: -3vw;
+    margin-top: 5vh;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -101,7 +112,7 @@ h1{
     text-align: center;
     margin-top: -15%;
     margin-bottom: 5vh;
-    color:rgba(73, 73, 73, 0.845);
+    color: rgba(71, 71, 71, 0.966);
     animation: fade 3s;
     width:25vw;
 }
@@ -259,7 +270,7 @@ button{
     position:fixed;
     border-radius: 2px;
     margin-left: -20vw;
-    margin-top: 9vh;
+    margin-top: 12vh;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 179, 39);
     font-family: tahoma;  
