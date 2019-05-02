@@ -31,10 +31,10 @@ a:hover{
 
 .navbarP{
     color:white;
-    background-color: rgb(179, 0, 0);
+    background-color: rgb(187, 0, 0);
     cursor: auto;
     font-size: 16pt;
-
+    animation: fade 2.5s;
 }
 
 
@@ -345,6 +345,7 @@ button{
     margin: auto;
 }
 
+
 h4{
     margin-bottom: 5%;
     color: rgba(180, 0, 0, 0.808);
@@ -459,6 +460,7 @@ p:hover{
     width: 27vh;
     height: auto;
     font-size: 2.3vh;
+    cursor: auto;
 }
 
 
