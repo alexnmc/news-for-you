@@ -13,7 +13,7 @@ const Navbar = (props) => {
     
     return (
         <div className="navbar">
-            {props.token && <Link  to = '/'  onClick = {props.handleToggle}>Read</Link>}
+            {props.token && <Link  to = '/'  onClick = {props.handleToggle}>Home</Link>}
             {props.token && <Link to ='/saved'>Saved</Link>}
             {props.token && <Link to = "/"  onClick = {()=> logout3()}>Log out</Link>}
         </div>
