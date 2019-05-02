@@ -49,7 +49,6 @@ class Home extends Component {
                                     value = {this.props.password}
                                     onChange = {this.props.handleChange}
                                 />
-
                                 <button className = 'loginButton'>Log in</button>
                             </form>
                             <button className ='loginButton' onClick = {this.props.editToggler2}>Sign up</button>

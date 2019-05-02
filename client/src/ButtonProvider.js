@@ -16,7 +16,7 @@ class ButtonProvider extends Component {
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "USA",
             sourceName: this.name,
-            toggle2: true,
+            toggle2: false,
         }
     }
    
@@ -81,8 +81,7 @@ class ButtonProvider extends Component {
     handleToggle = () => {
         this.setState( prevState => {   
                     return { 
-                        toggle: true, 
-                        toggle2: true
+                        toggle: !prevState.toggle,
                     }
         })
         this.getMount()
@@ -93,7 +92,6 @@ class ButtonProvider extends Component {
     handleToggle2 = () => {
         this.setState( prevState => {   
             return { 
-                toggle: false, 
                 toggle2: !prevState.toggle2
             }
         })

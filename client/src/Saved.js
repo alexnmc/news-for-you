@@ -80,7 +80,6 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                                             </div>
                                         </div>
                                     </div>
-                            
                                 )
                             }
                       })
