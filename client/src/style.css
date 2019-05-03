@@ -165,13 +165,14 @@ h1{
     flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 250);
-    animation: move2 1.2s;
+    animation: move2 2s;
     margin-right: 5vw;
 }
 
 
+
 @keyframes move2{
-    from{ margin-left: 100%}
+    from{ margin-left: 90%}
     to{ margin-left: 0vw}
 }
 
