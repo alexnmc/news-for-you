@@ -31,9 +31,9 @@ a:hover{
 
 .navbarP{
     color:white;
-    background-color: rgba(146, 0, 0, 0.89);
+    background-color: rgba(146, 0, 0, 0.945);
     cursor: auto;
-    font-size: 16pt;
+    font-size: 14pt;
     animation: fade 2.5s;
 }
 
@@ -76,12 +76,10 @@ img{
     color: rgba(71, 71, 71, 0.966);
     font-family: helvetica;
     position: fixed;
-    height: 5vh;
     width:20vw;
-    padding-top: 5pt;
-    font-size: 15pt;
+    font-size: 17pt;
     margin-left: -3vw;
-    margin-top: 5vh;
+    margin-top: 11vh;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -269,7 +267,7 @@ button{
     position:fixed;
     border-radius: 2px;
     margin-left: -20vw;
-    margin-top: 12vh;
+    margin-top: 19vh;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(0, 179, 39);
     font-family: tahoma;  
@@ -347,7 +345,7 @@ button{
 
 h4{
     margin-bottom: 5%;
-    color: rgba(180, 0, 0, 0.808);
+    color: rgba(180, 0, 0, 0.918);
     font-size: 16pt;
 }
 
@@ -453,8 +451,8 @@ p:hover{
 
 .topHead{
     position: fixed;
-    background-color:  rgba(184, 0, 0, 0.947);
-    color:rgb(240, 240, 240);
+    background-color: rgb(161, 0, 0);
+    color:rgb(255, 255, 255);
     padding: 7px;
     width: 27vh;
     height: auto;
