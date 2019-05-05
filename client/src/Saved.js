@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {withUser} from './UserProvider'
+import Loading from './Loading'
 
 
 
@@ -10,7 +11,7 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         this.state = {
             idNumber : this.props.user._id,
             articles:[],
-            
+            request: 'on'
         }
     }
 
@@ -23,7 +24,8 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         axios.get(`/articles/${id}`)
          .then(response => {
             this.setState({
-                articles: response.data
+                articles: response.data,
+                request: 'off'
             })
         })
     }
@@ -98,7 +100,7 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                 </div>
                 <h1 className = 'sourceName2'>{this.state.articles.length ? 'Your saved articles:' : null}</h1>
                 </div>
-                {this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
+                {this.state.request === 'on' ? <Loading/> : this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
             </div>
     )

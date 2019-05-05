@@ -148,6 +148,14 @@ h1{
     font-family: 'helvetica';
 }
 
+.loading{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    
+}
 
 .bottomWrap{
     display: flex;
@@ -177,7 +185,6 @@ h1{
 }
 
 
-
 .homeWrap{
     margin-left: 74vw;
     margin-top: 20vh;
@@ -185,7 +192,6 @@ h1{
     height: 30vh;
     position: fixed;
 }
-
 
 
 .buttonWrap{
