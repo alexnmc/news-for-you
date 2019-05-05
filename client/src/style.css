@@ -50,7 +50,7 @@ a:hover{
 
 h1{
     margin-bottom:7px;
-    color:rgba(174, 2, 2, 0.968);
+    color:rgba(94, 0, 0, 0.808);
 }
 
 
@@ -60,7 +60,7 @@ img{
 
 
 .sourceName{
-    color: rgb(170, 0, 0);
+    color: rgb(173, 1, 1);
     font-family: helvetica;
     height: 5vh;
     font-size:16pt;
@@ -70,7 +70,7 @@ img{
 
 
 .sourceName2{
-    color: rgba(67, 67, 67, 0.824);
+    color: rgb(173, 1, 1);
     font-family: helvetica;
     position: fixed;
     height: 5vh;
@@ -233,7 +233,7 @@ h1{
 .containerH1{
     font-family: 'helvetica';
     font-size: 17pt;
-    color: rgba(67, 67, 67, 0.824);
+    color: rgb(170, 0, 0);
     margin-top: 3vh;
     margin-left: 2vw;
     margin-bottom: 0px;
