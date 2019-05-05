@@ -17,6 +17,8 @@ class ButtonProvider extends Component {
             name: localStorage.getItem("name") || "USA",
             sourceName: this.name,
             toggle2: false,
+            loading: 'on',
+            
         }
     }
    
@@ -28,12 +30,19 @@ class ButtonProvider extends Component {
                 this.setState({
                     articles: response.data.articles,
                     sourceName: this.state.sourceName,
+                    loading: 'off'
                 })
             })
     }
 
 
-    
+    loadingAnimation = () =>{
+        this.setState({
+            loading: 'on'
+        })
+    }
+
+
     getNewsSource= (url, name) => {  
         Scroll.animateScroll.scrollToTop()
         localStorage.setItem("url", url)
@@ -42,11 +51,11 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
+                loading: 'off'
             })
         })
             this.setState(prevState=>{
                 return{ 
-                    
                     sourceName: name,
                     url: localStorage.getItem("url"), //returns to the last page viewed
                     name: localStorage.getItem("name"),
@@ -64,11 +73,11 @@ class ButtonProvider extends Component {
          .then(response => {
             this.setState({
                 articles: response.data.articles,
+                loading: 'off'
             })
         })
             this.setState(prevState=>{  
                 return { 
-                   
                     sourceName: name,
                     url: localStorage.getItem("url"), 
                     name: localStorage.getItem("name"),
@@ -99,7 +108,6 @@ class ButtonProvider extends Component {
     }
     
     
-    
     deleteAll = (id) => {
         axios.delete(`articles/delete/${id}`).then(response => {
             alert(response.data)
@@ -117,6 +125,7 @@ class ButtonProvider extends Component {
                     handleToggle: this.handleToggle,
                     handleToggle2: this.handleToggle2,
                     deleteAll: this.deleteAll,
+                    loadingAnimation: this.loadingAnimation,
                     ...this.state
                 }}>
                 {this.props.children}

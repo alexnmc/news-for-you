@@ -7,14 +7,15 @@ import {withButton} from './ButtonProvider'
        
         function getNews(url, name) {
             props.getNewsSource(url, name)
+            props.loadingAnimation()
         }
     
     
         function getNews2(url, name) {
             props.getNewsCountry(url, name)
+            props.loadingAnimation()
         }
        
-    
     
     return (
         <div className = "button2Wrap">

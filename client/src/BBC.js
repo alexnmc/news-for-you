@@ -5,6 +5,7 @@ import Home from './Home'
 import {withUser} from './UserProvider'
 import {withButton} from './ButtonProvider'
 import Scroll from 'react-scroll'
+import Loading from './Loading'
 
 
 
@@ -14,7 +15,8 @@ import Scroll from 'react-scroll'
         super(props)
         this.state = {
            
-           sourceName: ''
+           sourceName: '',
+           
         }
     }
 
@@ -99,8 +101,7 @@ import Scroll from 'react-scroll'
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
                 </div>
-                {article}
-               
+                {this.props.loading === 'on' ? <Loading/> : this.props.articles.length ? article : <h1 className = 'databaseH1'>not available</h1>}
             </div>
         )
     }
