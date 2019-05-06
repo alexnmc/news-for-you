@@ -274,7 +274,6 @@ button{
 }
 
 
-
 .saveAll{
     width: 75pt;
     height: 22pt;
@@ -291,7 +290,6 @@ button{
 }
 
 
-
 .deleteAll{
     background-color: rgb(192, 0, 0);
     color: rgba(255, 255, 255, 0.968);
@@ -304,7 +302,6 @@ button{
     height: 19pt;
     font-size: 11pt;
 }
-
 
 
 .deleteAccount{
@@ -321,7 +318,6 @@ button{
     font-size: 10pt;
     animation: fade 2s;  
 }
-
 
 
 .databaseH1{
@@ -349,6 +345,7 @@ button{
     margin-top: 0.5vh;
     color: rgb(171, 0, 0);
     margin: auto;
+    font-size: 12pt;
 }
 
 
@@ -388,7 +385,6 @@ h4{
     margin-top: 5pt;
     border: 0px;
 }
-
 
 
 .readMore{
@@ -502,7 +498,7 @@ p:hover{
 
 h2{
     margin-top:2pt;
-    font-size:13pt;
+    font-size:12.5pt;
 }
 
 @media only screen and (max-width: 1100px) {

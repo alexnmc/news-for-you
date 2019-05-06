@@ -85,7 +85,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("cbs-news", 'CBS News')}>CBS</p>
                     <p onClick = {()=> getNews("cnn","CNN")}>CNN</p>
                     <p onClick = {()=> getNews("cnbc", "CNBC News")}>CNBC </p>
-                    <p onClick = {()=> getNews("crypto-coins-news", 'Crypto Coins News')}>Crypto News</p>
+                    <p onClick = {()=> getNews("crypto-coins-news", 'Crypto Coins News')}>Crypto Coins News</p>
                     <p onClick = {()=> getNews("daily-mail", "Daily Mail News")}>Daily Mail</p>
                     <p onClick = {()=> getNews("espn", 'ESPN News')}>ESPN</p>
                     <p onClick = {()=> getNews("entertainment-weekly", 'Entertaiment Weekly')}>Entertainment Weekly</p>
