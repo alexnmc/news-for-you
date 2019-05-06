@@ -513,14 +513,14 @@ h2{
     
     
     .newsDiv{
-        width: 170pt;
+        width: 180pt;
         height: auto;
         margin: auto;
         padding:8px;
         border-top: 0;
         margin-bottom: 10%;
         margin-top: 10%;
-        margin-right:33vw;
+        margin-right:34vw;
         font-size: 8pt;
        
     }
@@ -551,6 +551,8 @@ h2{
         margin-left:0px;
         animation: fadein 1s, fade 1.2s;
     }
+
+    p{font-size: 8pt;}
     
     h1,
     h2,
@@ -563,6 +565,10 @@ h2{
         margin: 0px;
     }
 
+    .sourceName3{
+        margin-top:10vh
+    }
+    
     .loginForm,
     .logIn,
     .signUp{
