@@ -26,7 +26,7 @@
 
 a{
     text-decoration: none;
-    font-size: 14pt;
+    font-size: 13pt;
     color: rgb(198, 0, 0);
     margin: 3vw;
     animation: fade 2.5s;
@@ -42,7 +42,7 @@ a:hover{
     color:white;
     background-color: rgba(146, 0, 0, 0.945);
     cursor: auto;
-    font-size: 14pt;
+    font-size: 13pt;
     animation: fade 2.5s;
 }
 
@@ -63,7 +63,7 @@ img{
     color: rgb(173, 1, 1);
     font-family: helvetica;
     height: 5vh;
-    font-size:16pt;
+    font-size:15pt;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -86,7 +86,7 @@ img{
     font-family: helvetica;
     position: fixed;
     width:20vw;
-    font-size: 17pt;
+    font-size: 15pt;
     margin-left: -3vw;
     margin-top: 11vh;
     background-color: rgba(255, 255, 255, 0);
@@ -114,11 +114,11 @@ h1{
 
 .newsforme{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 17pt;
+    font-size: 16pt;
     text-align: center;
-    margin-top: -15%;
-    margin-bottom: 5vh;
-    color: rgba(71, 71, 71, 0.966);
+    margin-top: 5%;
+    margin-bottom:17pt;
+    color: rgba(71, 71, 71, 0.767);
     animation: fade 3s;
     width:25vw;
 }
