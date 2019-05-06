@@ -532,7 +532,6 @@ h2{
         margin:5px;
     }
 
-    
     .topHead,
     .topHead2{
         width: 20vw;
@@ -627,7 +626,7 @@ h2{
         position:fixed;
         border-radius: 2px;
         margin-left: -6.3vw;
-        margin-top: 27vh;
+        margin-top: 29vh;
         background-color: rgba(0, 0, 0, 0);
         color: rgb(0, 179, 39);
         font-family: tahoma;  
@@ -647,14 +646,12 @@ h2{
         padding:2pt;
     }
 
-
-    
     .savedH1{
         font-size:10pt;
     }
 
     .containerH1{
-        font-size: 8pt;
+        font-size: 7pt;
     }
 
     .readMore2{
@@ -697,5 +694,9 @@ h2{
         justify-content: center;
         margin: auto;
         
+    }
+
+    .newsforme{
+        margin-bottom: 20pt;
     }
 }
