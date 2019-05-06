@@ -540,7 +540,7 @@ h2{
     }
 
     .argentina{
-        margin-top:12vh;
+        margin-top:13vh;
     }
     
     .navbarWrap2{
@@ -615,7 +615,8 @@ h2{
 
       
      a{
-         font-size:10pt;
+         font-size:12pt;
+         color: rgb(170, 0, 0);
      }
 
      
