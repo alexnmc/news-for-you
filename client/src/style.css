@@ -535,7 +535,8 @@ h2{
     
     .topHead,
     .topHead2{
-        width:62pt;
+        width:65pt;
+        font-size: 8pt;
     }
 
     .argentina{
@@ -543,9 +544,9 @@ h2{
     }
     
     .navbarWrap2{
-        width: 62pt;
+        width: 65pt;
         height: 85vh;
-        margin-top: 48vh;
+        margin-top: 58vh;
         padding: 0px;
         border: 0px;
         margin-left:0px;
@@ -565,6 +566,9 @@ h2{
         margin: 0px;
     }
 
+    .sourceName{
+        margin-top: 7vh;
+    }
     .sourceName3{
         margin-top:10vh
     }
@@ -617,8 +621,10 @@ h2{
      .saveAll{
         width:37pt;
         height: 12pt;
-        font-size:5pt;
-        margin-left:0.01pt;
-        margin-right:0pt;
-     }
+        font-size:6pt;
+    }
+
+    .deleteAccount{
+        visibility: hidden;
+    }
 }
