@@ -571,7 +571,7 @@ h2{
         margin-left: 2vw;
     }
     .sourceName3{
-        margin-top:10vh
+        margin-top:12vh
     }
     
     .loginForm,
@@ -611,13 +611,14 @@ h2{
      }
 
      .news4you{
-         font-size:9pt;
+         font-size: 10pt;
      }
 
       
      a{
-         font-size:12pt;
+         font-size:13pt;
          color: rgb(170, 0, 0);
+         font-weight: 900;
      }
 
      
