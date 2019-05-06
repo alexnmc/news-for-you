@@ -513,7 +513,7 @@ h2{
     
     
     .newsDiv{
-        width: 180pt;
+        width: 190pt;
         height: auto;
         margin: auto;
         padding:8px;
@@ -521,7 +521,7 @@ h2{
         margin-bottom: 10%;
         margin-top: 10%;
         margin-right:34vw;
-        font-size: 8pt;
+        font-size: 10pt;
        
     }
     
@@ -535,7 +535,7 @@ h2{
     
     .topHead,
     .topHead2{
-        width: 70pt;
+        width: 80pt;
         font-size: 8pt;
     }
 
@@ -544,7 +544,7 @@ h2{
     }
     
     .navbarWrap2{
-        width: 70pt;
+        width: 80pt;
         height: 85vh;
         margin-top: 55vh;
         padding: 0px;
