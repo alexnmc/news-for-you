@@ -567,11 +567,11 @@ h2{
     }
 
     .sourceName{
-        margin-top: 5vh;
+        margin-top: 10pt;
         margin-left: 2vw;
     }
     .sourceName3{
-        margin-top:12vh
+        margin-top:40pt
     }
     
     .loginForm,
@@ -626,7 +626,7 @@ h2{
         cursor: pointer;
         position:fixed;
         border-radius: 2px;
-        margin-left: -10vw;
+        margin-left: -6.3vw;
         margin-top: 27vh;
         background-color: rgba(0, 0, 0, 0);
         color: rgb(0, 179, 39);
