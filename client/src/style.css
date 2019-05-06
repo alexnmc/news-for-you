@@ -535,18 +535,18 @@ h2{
     
     .topHead,
     .topHead2{
-        width: 80pt;
+        width: 20vw;
         font-size: 8pt;
     }
 
     .argentina{
-        margin-top:13vh;
+        margin-top:44pt;
     }
     
     .navbarWrap2{
-        width: 80pt;
-        height: 85vh;
-        margin-top: 55vh;
+        width: 20vw;
+        height: 80vh;
+        margin-top: 52vh;
         padding: 0px;
         border: 0px;
         margin-left:0px;
@@ -598,15 +598,7 @@ h2{
      }
      
      .topP{
-        margin-top: 85vh;
-        margin-left:-10vw;
-        height: 25pt;
-        width: 25pt;
-        cursor:pointer;
-        background-image: url('./Photos/top.png');
-        background-size: cover;
-        background-position: center;
-        position: fixed;
+       visibility: hidden;
      }
  
      button{
@@ -631,7 +623,16 @@ h2{
         width:45pt;
         height: 14pt;
         font-size:8pt;
-        margin-left: 0.1vw
+        cursor: pointer;
+        position:fixed;
+        border-radius: 2px;
+        margin-left: -10vw;
+        margin-top: 27vh;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(0, 179, 39);
+        font-family: tahoma;  
+        font-weight: bolder;
+        animation: fade 2s;  
     }
 
     .deleteAccount{
