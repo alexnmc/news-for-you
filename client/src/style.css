@@ -613,7 +613,7 @@ h2{
 
       
      a{
-         font-size:13pt;
+         font-size:12pt;
          color: rgb(170, 0, 0);
          font-weight: 900;
      }
@@ -637,5 +637,65 @@ h2{
 
     .deleteAccount{
         visibility: hidden;
+    }
+
+
+    .newsDiv2{
+        width: 55vw;
+        margin: 4vw;
+        font-size: 12pt;
+        padding:2pt;
+    }
+
+
+    
+    .savedH1{
+        font-size:10pt;
+    }
+
+    .containerH1{
+        font-size: 10pt;
+    }
+
+    .readMore2{
+        font-size: 8pt;
+    }
+
+    .delete{
+         width: 45pt;
+         height: 12pt;
+         font-size: 7pt;
+         display:flex;
+         align-items: center;
+         justify-content: center;
+
+    }
+
+    .name2{
+        font-size: 8pt;
+    }
+
+    .sourceName2{
+        margin-top: 20pt;
+        font-size:10pt;
+    }
+
+    .deleteAll{
+        width:50pt;
+        height:15pt;
+        font-size:7pt;
+        margin-top: 15pt;
+        margin-left: 35vw;
+    }
+    
+    .container{
+       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
     }
 }
