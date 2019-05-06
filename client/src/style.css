@@ -504,3 +504,115 @@ p:hover{
 h2{
     margin-top:2pt;
 }
+
+@media only screen and (max-width: 700px) {
+    
+    .navbarP{
+        font-size: 9pt;
+    }
+    
+    
+    .newsDiv{
+        width: 170pt;
+        height: auto;
+        margin: auto;
+        padding:8px;
+        border-top: 0;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        margin-right:33vw;
+        font-size: 8pt;
+       
+    }
+    
+    
+    img{
+        height: 100%;
+        width: 100%;
+        margin:5px;
+    }
+
+    
+    .topHead,
+    .topHead2{
+        width:62pt;
+    }
+
+    .argentina{
+        margin-top:12vh;
+    }
+    
+    .navbarWrap2{
+        width: 62pt;
+        height: 85vh;
+        margin-top: 48vh;
+        padding: 0px;
+        border: 0px;
+        margin-left:0px;
+        animation: fadein 1s, fade 1.2s;
+    }
+    
+    h1,
+    h2,
+    .readMore,
+    .sourceName,
+    .sourceName2,
+    .sourceName3,
+    .newsforme{
+        font-size:8pt;
+        margin: 0px;
+    }
+
+    .loginForm,
+    .logIn,
+    .signUp{
+         width: auto;
+        
+    }
+
+    .loginButton{
+        width: 60pt;
+        font-size: 8pt;
+        height: 17pt;
+    }
+    
+    
+    .login1{
+        width:70pt;
+        height: 18pt;
+    }
+ 
+     h4{
+         font-size: 10pt;
+     }
+     
+     .topP{
+        
+         height:15pt;
+         width:15pt;
+     }
+ 
+     button{
+         width:37pt;
+         height: 12pt;
+         font-size: 7pt;
+     }
+
+     .news4you{
+         font-size:9pt;
+     }
+
+      
+     a{
+         font-size:10pt;
+     }
+
+     
+     .saveAll{
+        width:37pt;
+        height: 12pt;
+        font-size:5pt;
+        margin-left:0.01pt;
+        margin-right:0pt;
+     }
+}
