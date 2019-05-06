@@ -50,7 +50,7 @@ a:hover{
 
 h1{
     margin-bottom:7px;
-    color:rgba(94, 0, 0, 0.808);
+    color:rgba(94, 0, 0, 0.911);
 }
 
 
@@ -103,12 +103,12 @@ img{
 
 
 h1{
-    font-size: 16pt;
+    font-size: 15pt;
 }
 
 
 .savedH1{
-    font-size: 15pt;
+    font-size: 14pt;
 }
 
 
@@ -126,7 +126,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 410pt;
+      width: 400pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -140,7 +140,7 @@ h1{
 
 
 .newsDiv2{
-    width: 28vw;
+    width: 27vw;
     padding: 10px;
     font-size: 10px;
     margin: 2vw;
@@ -249,7 +249,7 @@ h1{
 
 
 button{
-    width: 74pt;
+    width: 70pt;
     height: 19pt;
     background-color: rgb(0, 201, 0);
     font-size: 12pt;
@@ -262,7 +262,7 @@ button{
 .delete{
     background-color: rgb(235, 0, 0);
     color: white;
-    width: 60pt;
+    width: 52pt;
     height: 18pt;
     font-size: 10pt;
 }
@@ -503,6 +503,7 @@ p:hover{
 
 h2{
     margin-top:2pt;
+    font-size:13pt;
 }
 
 @media only screen and (max-width: 1100px) {
