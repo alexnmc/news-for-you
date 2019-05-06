@@ -520,7 +520,7 @@ h2{
         border-top: 0;
         margin-bottom: 10%;
         margin-top: 10%;
-        margin-right:34vw;
+        margin-right:27vw;
         font-size: 10pt;
        
     }
@@ -601,6 +601,7 @@ h2{
         
          height:15pt;
          width:15pt;
+         margin-left: 0.1vw;
      }
  
      button{
@@ -621,9 +622,10 @@ h2{
 
      
      .saveAll{
-        width:37pt;
-        height: 12pt;
-        font-size:6pt;
+        width:45pt;
+        height: 14pt;
+        font-size:8pt;
+        margin-left: 0.1vw
     }
 
     .deleteAccount{
