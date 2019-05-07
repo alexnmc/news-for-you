@@ -17,28 +17,27 @@
 .rates{
     display: flex;
     flex-direction:row;
-    height:5vh;
-    margin-top: 5vh;
+    height:3.5vh;
+    margin-top:5.5vh;
     position: fixed;
+    background-color: white;
 }
 
 .dollar{
-    margin:10pt;
+    margin:2pt;
     width: 200pt;
-    height: 20pt;
-    font-size:13pt;
-    color: rgb(165, 0, 8);
+    font-size:12.5pt;
+    color: rgba(206, 0, 10, 0.829);
     font-family: 'tahoma' ;
     position: relative;
     left: 0;
     top: 0;
     animation: slideshow 120s linear infinite;
-    
 }  
 
 
 @keyframes slideshow {
-    0%    { left: -2800%; }
+    0%    { left: -2700%; }
     100%  { left: 0; }
   }
 
