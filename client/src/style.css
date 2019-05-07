@@ -22,8 +22,6 @@
     position: fixed;
 }
 
-
-
 .dollar{
     margin:10pt;
     width: 200pt;
@@ -37,14 +35,6 @@
     animation: slideshow 120s linear infinite;
     
 }  
-
-
-.money{
-    position: ralative;
-    display: flex;
-    flex-direction: row;
-    
-}
 
 
 @keyframes slideshow {
