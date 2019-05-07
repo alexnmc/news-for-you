@@ -116,10 +116,11 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16pt;
     text-align: center;
-    margin-bottom:17pt;
+    margin-bottom:15pt;
     color: rgba(71, 71, 71, 0.767);
     animation: fade 3s;
     width:25vw;
+    margin-left:-2vw;
 }
 
 
@@ -173,7 +174,7 @@ h1{
     justify-content: center;
     background-color: rgba(255, 255, 250);
     animation: move2 2s;
-    margin-right: 5vw;
+    margin-right: 7vw;
 }
 
 
