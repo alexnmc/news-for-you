@@ -34,7 +34,7 @@
     position: relative;
     left: 0;
     top: 0;
-    animation: slideshow 27s linear infinite;
+    animation: slideshow 120s linear infinite;
     
 }  
 
@@ -48,7 +48,7 @@
 
 
 @keyframes slideshow {
-    0%    { left: -1000%; }
+    0%    { left: -2800%; }
     100%  { left: 0; }
   }
 
