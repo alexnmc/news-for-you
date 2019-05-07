@@ -22,7 +22,7 @@ class Rates extends Component {
                         value: obj[i],
                         id: Math.random()
                     }
-                        arr.push(obj2)
+                       if(i !== 'USD'){arr.push(obj2)}
                 }
             this.setState({
                 rates: arr,
