@@ -736,4 +736,8 @@ h2{
     .newsforme{
         margin-bottom: 20pt;
     }
+
+    .dollar{
+        font-size:12pt;
+    }
 }
