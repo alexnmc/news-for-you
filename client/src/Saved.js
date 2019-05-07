@@ -19,7 +19,6 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         this.getArticles(this.props.user._id)
     }
    
-    
     getArticles = (id) => {
         axios.get(`/articles/${id}`)
          .then(response => {

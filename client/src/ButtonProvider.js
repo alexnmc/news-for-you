@@ -16,13 +16,11 @@ class ButtonProvider extends Component {
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "USA",
             sourceName: this.name,
-            toggle2: false,
             loading: 'on',
             
         }
     }
    
-    
     
     getMount = () => {
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
@@ -64,7 +62,6 @@ class ButtonProvider extends Component {
     }
    
    
-    
     getNewsCountry = (url, name) => { 
         Scroll.animateScroll.scrollToTop()
         localStorage.setItem("url", url) 
@@ -86,23 +83,11 @@ class ButtonProvider extends Component {
     }
         
     
-    
     handleToggle = () => {
         this.setState( prevState => {   
                     return { 
                         toggle: true,
                     }
-        })
-        this.getMount()
-    }
-    
-    
-    
-    handleToggle2 = () => {
-        this.setState( prevState => {   
-            return { 
-                toggle2: !prevState.toggle2
-            }
         })
         this.getMount()
     }
@@ -123,7 +108,6 @@ class ButtonProvider extends Component {
                     getNewsCountry: this.getNewsCountry,
                     getMount: this.getMount,
                     handleToggle: this.handleToggle,
-                    handleToggle2: this.handleToggle2,
                     deleteAll: this.deleteAll,
                     loadingAnimation: this.loadingAnimation,
                     ...this.state

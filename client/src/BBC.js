@@ -9,14 +9,11 @@ import Loading from './Loading'
 
 
 
-
- class BBC extends Component { 
+class BBC extends Component { 
     constructor(props){
         super(props)
         this.state = {
-           
            sourceName: '',
-           
         }
     }
 
@@ -56,7 +53,6 @@ import Loading from './Loading'
     }
    
 
-    
     handleErase = () => {
         var answer = window.confirm("This will permanently delete you account, are you sure you want to proceed?")
             if(answer){
@@ -68,7 +64,6 @@ import Loading from './Loading'
    
    
     render(){
-        
         const article = this.props.articles.map(item => {
         return(
             <div key = { Math.random()}>
@@ -94,7 +89,7 @@ import Loading from './Loading'
                     <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
                 </div>
                 <Button1/>
-                {!this.props.toggle2 && <Home/>}
+                <Home/>
                 <div className = 'buttonWrap'>
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login to save articles:'}</h1>
                     {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}

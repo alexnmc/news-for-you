@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Saved from './Saved'
 import BBC from './BBC'
 import {withUser} from './UserProvider'
+import Rates from './Rates'
 
 
 
@@ -13,6 +14,7 @@ class App extends Component {
         return (
             <div className = "div">
                 <Navbar/>
+                <Rates/>
                 <Switch>
                     <Route path = '/saved' component = {Saved}/>
                     <Route path = '/' component = {BBC}/>
