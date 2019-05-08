@@ -23,7 +23,7 @@
     padding-bottom:1pt;
     margin-top:32pt;
     position: fixed;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.986);
     border-bottom: 1.5pt solid rgb(177, 0, 0);
 }
 
@@ -109,7 +109,7 @@ img{
     font-family: helvetica;
     position: fixed;
     margin-top:4vh;
-    font-size: 17pt;
+    font-size: 16pt;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -137,12 +137,12 @@ img{
 
 
 h1{
-    font-size: 15pt;
+    font-size:14pt;
 }
 
 
 .savedH1{
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 
@@ -161,7 +161,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 400pt;
+      width: 380pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -395,16 +395,16 @@ button{
 h4{
     margin-bottom: 5%;
     color: rgba(180, 0, 0, 0.918);
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 
 .login1{
-    width: 115pt;
-    height: 22pt;
+    width: 100pt;
+    height: 21pt;
     margin: 2pt;
     border-radius: 3px;
-    font-size: 10pt;
+    font-size:9pt;
     background-color: rgba(255, 255, 255, 0.945);
     border: 2px solid rgba(68, 0, 0, 0.356);
     color: black;
@@ -413,8 +413,8 @@ h4{
 
 
 .loginButton{
-    width:80pt;
-    height: 21pt;
+    width:75pt;
+    height: 20pt;
     background-color: rgb(73, 73, 73);
     color: rgb(243, 243, 243);
     font-size: 11pt;
@@ -473,7 +473,7 @@ h4{
 
 
 p{
-    font-size: 2.2vh;
+    font-size: 13pt;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
