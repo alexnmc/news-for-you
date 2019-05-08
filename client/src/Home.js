@@ -73,8 +73,17 @@ class Home extends Component {
                                 className = "login1"
                                 type ='text'
                                 name ='password'
-                                placeholder ='choose your password:'
+                                placeholder ='choose a password:'
                                 value = {this.props.password}
+                                onChange = {this.props.handleChange}
+                            />
+
+                            <input
+                                className = "login1"
+                                type ='text'
+                                name ='repeat'
+                                placeholder ='repeat password:'
+                                value = {this.props.repeat}
                                 onChange = {this.props.handleChange}
                             />
                             <button className = 'loginButton'>Sign up</button>
