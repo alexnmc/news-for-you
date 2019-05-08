@@ -736,16 +736,18 @@ h2{
     }
 
     .dollar{
-        font-size:9pt;
+        font-size: 10pt;
         font-weight: bolder;
     }
 
     .rates{
         height:1pt;
-        padding-bottom:5pt;
+        margin-top:27pt;
+        padding-bottom:7pt;
+        border-bottom: 1pt solid rgb(197, 0, 0);
     }
 
     .navbar{
-        height:30pt;
+        height:31pt;
     }
 }
