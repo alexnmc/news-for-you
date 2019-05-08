@@ -73,7 +73,7 @@ class Home extends Component {
                                 className = "login1"
                                 type ='text'
                                 name ='password'
-                                placeholder ='choose a password:'
+                                placeholder ='enter password:'
                                 value = {this.props.password}
                                 onChange = {this.props.handleChange}
                             />
