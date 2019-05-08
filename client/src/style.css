@@ -611,6 +611,10 @@ h2{
         
     }
 
+    .home{
+        margin-left:5vw;
+    }
+
     .loginButton{
         width: 60pt;
         font-size: 8pt;
