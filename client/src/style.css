@@ -690,8 +690,6 @@ h2{
         cursor: pointer;
         position:fixed;
         border-radius: 2px;
-        margin-left: -6.3vw;
-        margin-top: 29vh;
         background-color: rgba(0, 0, 0, 0);
         color: rgb(0, 179, 39);
         font-family: tahoma;  
@@ -779,5 +777,15 @@ h2{
 
     .navbar{
         height:31pt;
+    }
+
+    .saveallDiv{
+        width:0pt
+
+    }
+    
+    
+    .saveallH1{
+        visibility: hidden;
     }
 }
