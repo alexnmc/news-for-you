@@ -297,8 +297,8 @@ h1{
 
 .containerH1{
     font-family: 'helvetica';
-    font-size: 14pt;
-    color: rgb(170, 0, 0);
+    font-size: 15pt;
+    color: rgba(71, 71, 71, 0.993);
     margin-top: 3vh;
     margin-left: 2vw;
     margin-bottom: 0px;
