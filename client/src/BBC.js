@@ -92,7 +92,10 @@ class BBC extends Component {
                 <Home/>
                 <div className = 'buttonWrap'>
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login to save articles:'}</h1>
-                    {this.props.token && <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>}
+                    {this.props.token && <div className = 'saveallDiv'>
+                                            <h1 className = 'saveallH1'>{`save all the articles from ${this.props.name}`}</h1>
+                                            <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
+                                         </div>}
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
                 </div>

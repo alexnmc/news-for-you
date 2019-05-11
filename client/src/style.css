@@ -141,9 +141,39 @@ h1{
 }
 
 
-.savedH1{
-    font-size: 13pt;
+.saveallH1{
+    font-size: 14pt;
+    margin-left: -400pt;
+    margin-bottom: -170pt;
+    color: rgba(71, 71, 71, 0.795);
+    font-family: helvetica;
 }
+
+.saveallDiv{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:170pt;
+    flex-direction:column;
+    position:fixed;
+    animation: fade 2s;  
+    margin-left:10vw;
+    margin-top: 15vh;
+    
+}
+
+.saveAll{
+    width: 75pt;
+    height: 22pt;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 179, 39);
+    font-family: tahoma;  
+    font-weight: bolder;
+    margin:auto;
+}
+
 
 
 .newsforme{
