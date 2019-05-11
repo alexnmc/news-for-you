@@ -780,7 +780,8 @@ h2{
     }
 
     .saveallDiv{
-        width:0pt
+        width:0pt;
+        height:0pt;
 
     }
     
