@@ -19,19 +19,20 @@
     align-items: center;
     justify-content: center;
     flex-direction:row;
-    height:14pt;
-    padding-bottom:5pt;
-    margin-top:30pt;
+    height:22pt;
+    padding-bottom:1pt;
+    margin-top:29pt;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.986);
-    border-bottom: 1.5pt solid rgb(177, 0, 0);
+    background-color:  rgba(146, 0, 0, 0.945);
+    border-bottom:2pt solid rgb(255, 255, 255);
+   
 }
 
 .dollar{
     margin:2pt;
     width: 200pt;
     font-size:11pt;
-    color: rgba(170, 0, 9, 0.918);
+    color:rgb(253, 253, 253);
     font-family: 'tahoma' ;
     position: relative;
     left: 0;
@@ -78,13 +79,18 @@ a:hover{
     cursor: auto;
     font-size: 13pt;
     animation: fade 2.5s;
+    width: 100pt;
+    text-align:center;
+    padding:2.5pt;
+    margin-left:45pt;
+    
 }
 
 
 
 h1{
     margin-bottom:7px;
-    color:rgba(94, 0, 0, 0.911);
+    color:rgb(170, 0, 0);
 }
 
 
@@ -312,7 +318,6 @@ h1{
 }
 
 
-
 button{
     width: 65pt;
     height: 18pt;
@@ -321,7 +326,6 @@ button{
     cursor: pointer;
     margin-top: 2.5pt; 
 }
-
 
 
 .delete{
