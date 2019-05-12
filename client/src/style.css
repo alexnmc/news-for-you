@@ -630,7 +630,10 @@ h2{
     .sourceName{
         margin-top: 14pt;
         margin-left: 2vw;
+        visibility:hidden;
     }
+    
+    
     .sourceName3{
         margin-top:40pt
     }
