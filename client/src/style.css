@@ -21,10 +21,10 @@
     flex-direction:row;
     height:22pt;
     padding-bottom:1pt;
-    margin-top:29pt;
+    margin-top:28pt;
     position: fixed;
     background-color:  rgba(146, 0, 0, 0.945);
-    border-bottom:2pt solid rgb(255, 255, 255);
+    border-bottom:1.5pt solid rgb(255, 255, 255);
    
 }
 
@@ -79,10 +79,10 @@ a:hover{
     cursor: auto;
     font-size: 13pt;
     animation: fade 2.5s;
-    width: 100pt;
+    width: 100vw;
     text-align:center;
     padding:2.5pt;
-    margin-left:45pt;
+   
     
 }
 
@@ -769,19 +769,20 @@ h2{
 
     .dollar{
         font-size: 10pt;
-        font-weight: bolder;
+        
+    }
+
+    .navbarP{
+        width:80pt;
+    }
+    .navbar{
+        height: 25pt;
     }
 
     .rates{
-        height:1pt;
-        margin-top:27pt;
-        padding-bottom:7pt;
-        border-bottom: 1pt solid rgb(197, 0, 0);
+        margin-top:25pt;
     }
-
-    .navbar{
-        height:31pt;
-    }
+    
 
     .saveallDiv{
         width:0pt;
