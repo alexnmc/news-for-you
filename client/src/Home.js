@@ -26,7 +26,7 @@ class Home extends Component {
          <div>
             {!this.props.token  ?
                 <div className = 'homeWrap'>
-                <h1 className = "newsforme">Create an account, cancel anytime:</h1>
+                <h1 className = "newsforme">create an account, cancel anytime</h1>
                     <div className = "home">
                         { this.props.toggle ?
                             <div className = 'logIn'>
