@@ -18,7 +18,7 @@ class UserProvider extends Component {
             adminPassword: '',
             user: JSON.parse(localStorage.getItem("user")) || {},
             token: localStorage.getItem("token") || "",
-            
+            loginLoading: 'off'
         }
     }
 
@@ -32,33 +32,39 @@ class UserProvider extends Component {
         })
     }
 
+    
+    loginOff = () => {
+     
+        this.setState({
+            loginLoading:'off'
+        })
+    }
+
 
     signup = userInfo => {
         this.state.password === this.state.repeat ?
-        axios.post('/user/signup', userInfo).then(res => {
-            const { token, user } = res.data
-            localStorage.setItem("user", JSON.stringify(user))//stores the token and the user  in local storage in case of page refresh...
-            localStorage.setItem("token", token)
-            this.setState({ user: user, token })
-            
-        })
-        .catch(err => alert(err.response.data.errMsg))
-
+            axios.post('/user/signup', userInfo).then(res => {
+                const { token, user } = res.data
+                localStorage.setItem("user", JSON.stringify(user))//stores the token and the user  in local storage in case of page refresh...
+                localStorage.setItem("token", token)
+                this.setState({ user: user, token })
+                
+            })
+            .catch(err => alert(err.response.data.errMsg))
         :
-
-        alert("passwords doesn't match")
+            alert("passwords doesn't match")
     }
 
     
     login = userInfo => {
-        axios.post('/user/login', userInfo).then(res => {
+         axios.post('/user/login', userInfo).then(res => {
             const { token, user } = res.data // when the token and user comes back from the database we store it in local storage
             localStorage.setItem("user", JSON.stringify(user))
             localStorage.setItem("token", token)
-            this.setState({ user: user, token })
+            this.setState({ user: user, token})
+            
         })
-        .catch(err => alert(err.response.data.errMsg))
-       
+        .catch(err => alert(err.response.data.errMsg), setTimeout(this.loginOff, 1000))
     }
    
    
@@ -71,9 +77,11 @@ class UserProvider extends Component {
         this.login(newUser) // calling the login function
         this.setState({
             username: '',
-            password: ''
+            password: '',
+            loginLoading: 'on'
         })
         this.props.handleToggle()
+        
     }
 
 
@@ -115,7 +123,8 @@ class UserProvider extends Component {
             if(answer){
                 this.setState({
                     user:'',   // we logout by removing the token from state and local storage
-                    token: ''
+                    token: '',
+                    loginLoading: 'off'
                 })
             localStorage.removeItem("user")
             localStorage.removeItem("token")
@@ -126,7 +135,8 @@ class UserProvider extends Component {
     logout = () => {
         this.setState({
             user:'',   // we logout by removing the token from state and local storage
-            token: ''
+            token: '',
+            loginLoading: 'off'
         })
         localStorage.removeItem("user")
         localStorage.removeItem("token")
@@ -143,6 +153,7 @@ class UserProvider extends Component {
                    user: this.state.user,
                    token: this.state.token,
                    toggle: this.state.toggle,
+                   loginLoading: this.state.loginLoading,
                    editToggler2 : this.editToggler2,
                    signup : this.signup,
                    login : this.login,
@@ -151,7 +162,8 @@ class UserProvider extends Component {
                    handleChange:this.handleChange,
                    handleDelete2: this.handleDelete2,
                    logout: this.logout,
-                   logout2: this.logout2
+                   logout2: this.logout2,
+                   loginOff: this.loginOff
                 }}>
                 {this.props.children}
             </Context.Provider>
