@@ -7,7 +7,7 @@
 
 .navbar {
     width: 100%;
-    height: 30pt;
+    height: 28pt;
     padding-top:6pt;
     background-color: rgb(255, 255, 250);
     position: fixed;
@@ -21,7 +21,7 @@
     flex-direction:row;
     height:22pt;
     padding-bottom:1pt;
-    margin-top:28pt;
+    margin-top:27pt;
     position: fixed;
     background-color:  rgba(146, 0, 0, 0.945);
     border-bottom:1.5pt solid rgb(255, 255, 255);
@@ -74,17 +74,14 @@ a:hover{
 
 
 .navbarP{
-    color:white;
-    background-color: rgba(146, 0, 0, 0.945);
+    color:rgb(155, 0, 0);
     cursor: auto;
-    font-size: 12.5pt;
+    font-size: 13.5pt;
     animation: fade 2.5s;
     width: 100pt;
     margin-left:4.2vw;
     text-align:center;
-    padding:2.5pt;
-   
-    
+    padding:1pt;
 }
 
 
