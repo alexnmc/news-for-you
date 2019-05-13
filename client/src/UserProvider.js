@@ -34,7 +34,6 @@ class UserProvider extends Component {
 
     
     loginOff = () => {
-     
         this.setState({
             loginLoading:'off'
         })
@@ -63,7 +62,8 @@ class UserProvider extends Component {
             localStorage.setItem("token", token)
             this.setState({ user: user, token})
         })
-        .catch(err => alert(err.response.data.errMsg))
+        .catch(err => alert(err.response.data.errMsg), setTimeout(this.loginOff, 1500))
+
     }
    
    
