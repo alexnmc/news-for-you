@@ -57,14 +57,13 @@ class UserProvider extends Component {
 
     
     login = userInfo => {
-         axios.post('/user/login', userInfo).then(res => {
+        axios.post('/user/login', userInfo).then(res => {
             const { token, user } = res.data // when the token and user comes back from the database we store it in local storage
             localStorage.setItem("user", JSON.stringify(user))
             localStorage.setItem("token", token)
             this.setState({ user: user, token})
-            
         })
-        .catch(err => alert(err.response.data.errMsg), setTimeout(this.loginOff, 1000))
+        .catch(err => alert(err.response.data.errMsg))
     }
    
    
@@ -81,7 +80,6 @@ class UserProvider extends Component {
             loginLoading: 'on'
         })
         this.props.handleToggle()
-        
     }
 
 
