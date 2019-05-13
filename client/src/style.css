@@ -612,7 +612,8 @@ h2{
     img{
         height: 100%;
         width: 100%;
-        margin:5px;
+        margin:0px;
+        margin-top:4pt;
     }
 
     .topHead,
@@ -644,8 +645,12 @@ h2{
     .sourceName2,
     .sourceName3,
     .newsforme{
-        font-size:8pt;
+        font-size:9pt;
         margin: 0px;
+    }
+    .savedH2{
+        font-size:9pt;
+        margin:0px;
     }
 
     .sourceName{
