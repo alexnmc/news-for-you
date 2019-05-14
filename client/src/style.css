@@ -287,8 +287,8 @@ h1{
         justify-content: center;
         border:2px solid rgb(255, 255, 255);
         margin-top: 15vh;
-        width:300pt;
-        height:170pt
+        width:270pt;
+        height:154pt
     }
     
     .topP{
@@ -827,6 +827,8 @@ h2{
 
     }
     
+    .videoWrap,
+    .videoWrap2,
     .saveallH1{
         visibility: hidden;
     }
