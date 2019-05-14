@@ -256,6 +256,7 @@ h1{
         color: rgb(0, 179, 39);
         font-family: tahoma;  
         font-weight: bolder;
+        font-size:10.5pt;
         animation: fade 2s;  
         margin:auto
     }
@@ -302,8 +303,8 @@ h1{
     }
 
     .deleteAccount{
-        width: 8vw;
-        height: 3.7vh;
+        width: 100pt;
+        height: 20pt;
         cursor: pointer;
         border-radius: 2px;
         background-color: rgba(0, 0, 0, 0);
@@ -321,20 +322,19 @@ h1{
         margin-top: 40vh;
     }
 
-   
 .savedVideo{
     display: flex;
     align-items:center;
     justify-content: flex-end;
     width:98vw;
     height:100vh;
-    margin-top: 90pt;
+    margin-top: 105pt;
    
 }
 
 .videoWrap2{
-    width:200pt;
-    height:112pt;
+    width:222pt;
+    height:127pt;
     position:fixed;
     margin:auto;
 }
@@ -352,12 +352,10 @@ h1{
     justify-content: center;
 }
 
-
 .bbcDiv{
     background-color: rgb(255, 255, 250);
     
 }
-
 
 .container{
     display: flex;
@@ -366,7 +364,6 @@ h1{
     align-items: center;
     justify-content: center;
 }
-
 
 .containerH1{
     font-family: 'helvetica';
@@ -378,13 +375,11 @@ h1{
     pointer-events: none;
 }
 
-
 .menu{
     display:flex;
     flex-direction: column;
     position: absolute;
 }
-
 
 button{
     width: 65pt;
@@ -395,7 +390,6 @@ button{
     margin-top: 2.5pt; 
 }
 
-
 .delete{
     background-color: rgb(235, 0, 0);
     color: white;
@@ -404,13 +398,11 @@ button{
     font-size: 10pt;
 }
 
-
 .readMore2{
     margin: 0px;
     color: rgb(0, 0, 126);
     font-size:11pt;
 }
-
 
 .deleteAll{
     background-color: rgb(192, 0, 0);
@@ -426,14 +418,11 @@ button{
     font-size: 9.5pt;
 }
 
-
-
 .databaseH1{
     text-align: center;
     margin-top:20vh;
     font-family: 'helvetica'
 }
-
 
 .loginForm,
 .logIn,
@@ -448,7 +437,6 @@ button{
     font-family: helvetica;
 }
 
-
 .name{
     margin-top: 0.5vh;
     color: rgb(171, 0, 0);
@@ -456,19 +444,16 @@ button{
     font-size: 12pt;
 }
 
-
 .name2{
     color: rgb(171, 0, 0);
     margin: auto;
 }
-
 
 h4{
     margin-bottom: 5%;
     color: rgba(180, 0, 0, 0.918);
     font-size: 14pt;
 }
-
 
 .login1{
     width: 105pt;
@@ -542,7 +527,6 @@ h4{
 }
 
 
-
 p{
     font-size: 12.5pt;
     font-weight: bolder;
@@ -578,7 +562,6 @@ p:hover{
     font-size: 13pt;
     pointer-events: none;
 }
-
 
 
 .topHead2{
