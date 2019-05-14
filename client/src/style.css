@@ -832,4 +832,24 @@ h2{
     .saveallH1{
         visibility: hidden;
     }
+
+    .homeWrap{
+        margin-top: auto;
+        margin:auto;
+       
+    }
+
+    .buttonWrap{
+        width:25vw;
+        margin-left:75%
+    }
+
+    @keyframes move2{
+        from{ margin-left: 90%}
+        to{ margin-left: -3vw}
+    }
+
+    .home{
+        margin-left: -3vw;
+    }
 }
