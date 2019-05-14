@@ -7,7 +7,7 @@ const Video = () => {
     return(
  <div className = 'videoWrap' >
    
-        <ReactPlayer className = 'reactPlayer' url={'https://www.youtube.com/watch?v=lrX6ktLg8WQ'} height='152pt' width='270pt' playing />
+        <ReactPlayer className = 'reactPlayer' url={'https://www.youtube.com/watch?v=lrX6ktLg8WQ'} height='100%' width='100%' playing />
    
  </div>  
     )
