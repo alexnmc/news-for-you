@@ -67,8 +67,8 @@ class BBC extends Component {
     render(){
         const article = this.props.articles.map(item => {
         return(
-            <div key = { Math.random()}>
-                <div className = "newsDiv" >
+           
+                <div className = "newsDiv" key = { Math.random()} >
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
@@ -78,7 +78,7 @@ class BBC extends Component {
                         <a className = "readMore"  href={item.url}>read more</a>
                     </div>
                 </div>
-            </div>
+           
         )
     })
        
@@ -90,18 +90,19 @@ class BBC extends Component {
                     <h1 className = 'sourceName'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
                 </div>
                 <Button1/>
-                <Home/>
-                
                 <div className = 'buttonWrap'>
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login to save articles:'}</h1>
+                    <Home/>
                     {this.props.token && <div className = 'saveallDiv'>
                                             <h1 className = 'saveallH1'>{`save all the articles from ${this.props.name}`}</h1>
                                             <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                                          </div>}
-                                         <Video/>
-                                         
-                    {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
-                    <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
+                    <Video/>
+                    <div className = 'bottomContainer'>  
+                        <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>             
+                        {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
+                       
+                    </div>
                 </div>
                 
                 {this.props.loading === 'on' ? <Loading/> : this.props.articles.length ? article : <h1 className = 'databaseH1'>not available</h1>}
