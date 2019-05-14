@@ -20,7 +20,8 @@
     "json-parser": "^1.1.5",
     "mongoose": "^5.4.16",
     "morgan": "^1.9.1",
-    "react-loading": "^2.0.3"
+    "react-loading": "^2.0.3",
+    "react-player": "^1.11.0"
   },
   "devDependencies": {
     "react-responsive-select": "^4.6.3"

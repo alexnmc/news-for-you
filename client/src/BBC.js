@@ -6,6 +6,7 @@ import {withUser} from './UserProvider'
 import {withButton} from './ButtonProvider'
 import Scroll from 'react-scroll'
 import Loading from './Loading'
+import Video from './Video'
 
 
 
@@ -90,15 +91,19 @@ class BBC extends Component {
                 </div>
                 <Button1/>
                 <Home/>
+                
                 <div className = 'buttonWrap'>
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login to save articles:'}</h1>
                     {this.props.token && <div className = 'saveallDiv'>
                                             <h1 className = 'saveallH1'>{`save all the articles from ${this.props.name}`}</h1>
                                             <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                                          </div>}
+                                         <Video/>
+                                         
                     {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}
                     <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>
                 </div>
+                
                 {this.props.loading === 'on' ? <Loading/> : this.props.articles.length ? article : <h1 className = 'databaseH1'>not available</h1>}
             </div>
         )

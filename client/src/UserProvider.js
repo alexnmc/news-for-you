@@ -63,9 +63,7 @@ class UserProvider extends Component {
             this.setState({ user: user, token})
         })
         .catch(err => alert(err.response.data.errMsg), setTimeout(this.loginOff, 1500))
-
     }
-   
    
     handleLogin = (e) => {   // login method, we send the username and password entered in the input fields to the database 
         e.preventDefault()
@@ -81,7 +79,6 @@ class UserProvider extends Component {
         })
         this.props.handleToggle()
     }
-
 
     handleSignup = (e) => {
         e.preventDefault()
@@ -99,7 +96,6 @@ class UserProvider extends Component {
         this.props.handleToggle()
     }
 
-
     handleChange = (e) => {
         e.preventDefault()
         const { name, value } = e.target
@@ -108,13 +104,11 @@ class UserProvider extends Component {
         })
     }
 
-    
     handleDelete2 = (id) => {
         axios.delete(`/user/${id}`).then(res => {
             alert(res.data)
         })
     }
-    
     
     logout2 = () => {
         var answer = window.confirm("Are you sure you want to log out?")
@@ -129,7 +123,6 @@ class UserProvider extends Component {
         }
     }
 
-    
     logout = () => {
         this.setState({
             user:'',   // we logout by removing the token from state and local storage
