@@ -665,12 +665,11 @@ h2{
     .sourceName{
         margin-top: 14pt;
         margin-left: 2vw;
-        visibility:hidden;
+        
     }
     
-    
     .sourceName3{
-        margin-top:40pt
+        margin-bottom:20pt
     }
     
     .loginForm,
@@ -701,9 +700,7 @@ h2{
          font-size: 10pt;
      }
      
-     .topP{
-       visibility: hidden;
-     }
+     
  
      button{
          width:37pt;
