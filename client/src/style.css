@@ -85,7 +85,6 @@ a:hover{
 }
 
 
-
 h1{
     margin-bottom:7px;
     color:rgb(141, 0, 0);
@@ -164,7 +163,7 @@ h1{
     position:fixed;
     animation: fade 2s;  
     margin-left:10vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     
 }
 
@@ -177,9 +176,7 @@ h1{
     color: rgb(0, 179, 39);
     font-family: tahoma;  
     font-weight: bolder;
-    margin:auto;
 }
-
 
 
 .newsforme{
@@ -574,7 +571,7 @@ p:hover{
 
 .topP{
     margin-top: 85vh;
-    margin-left:-23vw;
+    margin-left:-25vw;
     height: 25pt;
     width: 25pt;
     cursor:pointer;
@@ -591,13 +588,12 @@ h2{
 
 .videoWrap{
     position: fixed;
-    margin-top:77vh;
+    margin-top: 75vh;
     margin-left:-3vw;
     display:flex;
     align-items:center;
     justify-content: center;
     border:2px solid rgb(255, 255, 255);
-   
 }
 
 
@@ -831,6 +827,7 @@ h2{
 
     }
     
+    .videoWrap,
     .saveallH1{
         visibility: hidden;
     }
