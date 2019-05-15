@@ -321,13 +321,13 @@ h1{
 
 
 .videoWrap2{
-    width:223.5pt;
-    height:126pt;
+    width:203pt;
+    height:114pt;
     position:fixed;
     margin:auto;
-    opacity:0;
-    margin-left:28.7vw;
-    margin-top: -12pt;
+    opacity:1;
+    margin-left:30.5vw;
+    margin-top: -6pt;
 }
 
 .topSpace{
@@ -505,7 +505,6 @@ h4{
     to{ margin-left: 3%}
    }
  
-
 
 .button2Wrap{
     display: flex;
