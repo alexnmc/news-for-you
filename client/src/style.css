@@ -134,7 +134,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 370pt;
+      width: 315pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -299,7 +299,7 @@ h1{
         background-image: url('./Photos/top.png');
         background-size: cover;
         background-position: center;
-        margin-right: 17vw;
+        margin-right:17vw;
     }
 
     .deleteAccount{
@@ -578,7 +578,7 @@ h2{
     }
     
     .newsDiv{
-        width: 50vw;
+        width: 45vw;
         height: auto;
         margin: auto;
         padding:8px;
@@ -701,6 +701,7 @@ h2{
         animation: fade 2s;  
     }
 
+    .topP,
     .deleteAccount{
         visibility: hidden;
     }
@@ -818,4 +819,38 @@ h2{
     .home{
         margin-left: -3vw;
     }
+}
+
+
+@media only screen and (min-width: 1900px) {
+
+    .buttonWrap{
+        margin-left:60vw;
+    }
+
+    .newsDiv{
+        margin-left: 35vw;
+    }
+
+      .h1Wrapper,
+      .navbarWrap2{
+          margin-left: 7vw
+      }
+
+      @keyframes movein {
+        from{margin-left: -10%}
+        to{ margin-left: 7vw}
+       }
+
+     .argentina{
+         margin-top:4vh;
+     }
+
+     .newsDiv{
+         width: 380pt;
+     }
+
+     .newsDiv2{
+         width: 350pt;
+     }
 }
