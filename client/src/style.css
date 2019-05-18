@@ -856,7 +856,6 @@ h2{
         font-size: 100%
     }
     
-    
     .newsDiv2{
         width:220pt;
     }
@@ -954,6 +953,10 @@ h2{
 
      .newsDiv2{
          width: 350pt;
+     }
+
+     .topP{
+         margin-left: 9vw;
      }
 }
 
