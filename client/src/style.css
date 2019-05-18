@@ -299,7 +299,7 @@ h1{
         background-image: url('./Photos/top.png');
         background-size: cover;
         background-position: center;
-        margin-right:17vw;
+        margin-right:20vw;
     }
 
     .deleteAccount{
@@ -317,9 +317,9 @@ h1{
     .bottomContainer{
         display:flex;
         margin:auto;
-        width:30vw;
+        width:40vw;
         position:fixed;
-        margin-top: 40vh;
+        margin-top:38vh;
     }
 
 
@@ -570,7 +570,7 @@ h2{
 
 
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 850px) {
     
     .navbarP{
         font-size: 9pt;
@@ -578,14 +578,14 @@ h2{
     }
     
     .newsDiv{
-        width: 40vw;
+        width: 47vw;
         height: auto;
         margin: auto;
         padding:8px;
         border-top: 0;
         margin-bottom: 10%;
         margin-top: 10%;
-        margin-right:34vw;
+        margin-right:27vw;
         font-size: 10pt;
        
     }
@@ -706,11 +706,10 @@ h2{
 
     
     .bottomContainer{
-        width: 240pt;
-        margin-left:90pt;
+        width: 270pt;
+        margin-left:110pt;
     }
     .topP{
-       
         width: 20pt;
         height:20pt;
     }
@@ -748,7 +747,7 @@ h2{
     }
 
     .name2{
-        font-size:7pt;
+        font-size:9pt;
     }
      
     .name{
@@ -835,6 +834,96 @@ h2{
 }
 
 
+
+
+@media only screen and (min-width: 851px) and (max-width: 1254px) {
+
+    .newsDiv{
+        width: 250pt;
+        margin-left:28vw;
+    }
+
+    h1{
+        font-size: 12pt;
+    }
+
+    h2{
+        font-size: 11pt;
+    }
+    
+    
+    .newsforme{
+        font-size: 100%
+    }
+    
+    
+    .newsDiv2{
+        width:220pt;
+    }
+
+    .navbarWrap2{
+        width: 26vw;
+        height: 80vh;
+        margin-top:51vh;
+        padding: 0px;
+        border: 0px;
+        margin-left:0px;
+        animation: fadein 1s, fade 1.2s;
+    }
+
+    p{font-size: 11pt;}
+    
+    .videoWrap{
+        width:200pt;
+        height:114pt;
+    }
+    
+    
+    .videoWrap2{
+        visibility: hidden;
+    }
+
+    .name2{
+        font-size: 9pt;
+    }
+
+     .bottomContainer{
+         width:150pt;
+         display: flex;
+         align-items: center;
+         justify-content: center
+     }
+
+     .topP{
+         margin:auto;
+     }
+
+     .deleteAccount{
+         visibility: hidden;
+         width:1pt;
+     }
+
+     .saveallDiv{
+         width: 160pt;
+         margin-left: 7vw;
+     }
+
+     .saveallH1{
+         font-size:11pt
+     }
+
+     .saveAll{
+         width:70pt;
+     }
+
+     .sourceName3{
+         font-size:12pt;
+     }
+}
+
+
+
+
 @media only screen and (min-width: 1900px) {
 
     .buttonWrap{
@@ -867,3 +956,4 @@ h2{
          width: 350pt;
      }
 }
+
