@@ -570,6 +570,8 @@ h2{
 
 
 
+
+
 @media only screen and (max-width: 850px) {
     
     .navbarP{
@@ -709,9 +711,11 @@ h2{
         width: 270pt;
         margin-left:110pt;
     }
+    
     .topP{
         width: 20pt;
         height:20pt;
+        visibility: hidden;
     }
     
     .deleteAccount{
@@ -957,6 +961,7 @@ h2{
 
      .topP{
          margin-left: 9vw;
+        
      }
 }
 
