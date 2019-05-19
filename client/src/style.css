@@ -134,12 +134,12 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 315pt;
+      width: 300pt;
       padding:10px;
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-left:27vw;
+      margin-left:30vw;
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
@@ -288,8 +288,8 @@ h1{
         justify-content: center;
         border:2px solid rgb(255, 255, 255);
         margin-top: 19vh;
-        width:270pt;
-        height:154pt
+        width:260pt;
+        height:148pt
     }
     
     .topP{
@@ -435,7 +435,7 @@ button{
     margin-top: 0.5vh;
     color: rgb(171, 0, 0);
     margin: auto;
-    font-size: 12pt;
+    font-size: 12.5pt;
 }
 
 .name2{
