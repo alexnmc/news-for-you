@@ -134,12 +134,12 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 300pt;
+      width: 320pt;
       padding:10px;
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-left:30vw;
+      margin-left:27vw;
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
@@ -572,7 +572,7 @@ h2{
 
 
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 896px) {
     
     .navbarP{
         font-size: 9pt;
@@ -840,11 +840,11 @@ h2{
 
 
 
-@media only screen and (min-width: 851px) and (max-width: 1254px) {
+@media only screen and (min-width: 897px) and (max-width: 1254px) {
 
     .newsDiv{
-        width: 250pt;
-        margin-left:28vw;
+        width: 290pt;
+        margin-left:25vw;
     }
 
     h1{
