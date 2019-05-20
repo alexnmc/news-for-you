@@ -85,7 +85,7 @@ a:hover{
 
 h1{
     margin-bottom:7px;
-    color:rgb(49, 49, 49);
+    color:rgb(32, 32, 32);
 }
 
 h2{
@@ -101,7 +101,7 @@ img{
     color: rgb(173, 1, 1);
     font-family: helvetica;
     height: 5vh;
-    font-size:14.5pt;
+    font-size:14pt;
     margin-top:1vh;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
@@ -134,7 +134,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 320pt;
+      width: 330pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -565,7 +565,7 @@ p:hover{
 
 h2{
     margin-top:2pt;
-    font-size:12.5pt;
+    font-size:12pt;
 }
 
 
@@ -637,7 +637,7 @@ h2{
     }
 
     .sourceName{
-        margin-top: 14pt;
+        margin-top: 13pt;
         margin-left: 2vw;
     }
     
