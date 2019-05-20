@@ -89,7 +89,7 @@ h1{
 }
 
 h2{
-    color: rgb(49, 49, 49);
+    color: rgb(37, 37, 37);
 }
 
 img{
@@ -134,7 +134,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 330pt;
+      width: 340pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -288,8 +288,8 @@ h1{
         justify-content: center;
         border:2px solid rgb(255, 255, 255);
         margin-top: 19vh;
-        width:260pt;
-        height:148pt
+        width:255pt;
+        height:145pt
     }
     
     .topP{
