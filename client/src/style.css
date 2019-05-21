@@ -858,6 +858,23 @@ h2{
     .home{
         margin-left: -3vw;
     }
+
+    .h1wrap{
+       height:3vh;
+
+       
+     }
+
+     .sourceName4{
+         font-size: 9pt;
+         margin-left:36vw
+     }
+     
+     
+     .sourceName1,
+     .sourceName3{
+         visibility: hidden;
+     }
 }
 
 
@@ -889,8 +906,8 @@ h2{
 
     .navbarWrap2{
         width: 26vw;
-        height: 80vh;
-        margin-top:51vh;
+        height: 85vh;
+        margin-top:42vh;
         padding: 0px;
         border: 0px;
         margin-left:0px;
@@ -984,7 +1001,8 @@ h2{
 
      .topP{
          margin-left: 9vw;
-        
-     }
+    }
+
+    
 }
 
