@@ -91,9 +91,11 @@ class BBC extends Component {
                 </div>
                 <Button1/>
                 <div className = 'buttonWrap'>
+                <div className = "h1wrap">
                     <h1 className = 'sourceName4'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>
                     <h1 className = 'sourceName1'> Breaking international news and headlines | News For You</h1>
                     <h1 className = 'sourceName3'> {this.props.token ? `Signed in as: ${this.props.user.username}` : 'Login to save articles'}</h1>
+                </div>   
                     <Home/>
                     {this.props.token && <div className = 'saveallDiv'>
                                             <h1 className = 'saveallH1'>{`save all the articles from ${this.props.name}`}</h1>

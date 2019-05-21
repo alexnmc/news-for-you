@@ -112,8 +112,6 @@ img{
     font-family: helvetica;
     height: 5vh;
     font-size:13pt;
-    margin-top: 0vh;
-    margin-left: -2vw;
     background-color: rgba(39, 23, 23, 0);
 }
 
@@ -121,8 +119,6 @@ img{
     color: rgb(173, 1, 1);
     font-family: helvetica;
     font-size:15pt;
-    margin-left: -19vw;
-    margin-top: 1vh;
     background-color: rgba(39, 23, 23, 0);
 }
 
@@ -162,6 +158,17 @@ h1{
       margin-bottom: 10vh;
       background-color: white;
       font-family: 'helvetica';
+}
+
+.h1wrap{
+    height: 60pt;
+    width: 370pt;
+    margin-top: -20pt;
+    position:fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .newsDiv2{
@@ -223,9 +230,6 @@ h1{
         color: rgba(71, 71, 71, 0.966);
         font-family: helvetica;
         font-size: 14pt;
-        margin:auto;
-        margin-left:0vw;
-        margin-top: -2.5vh;
         background-color: rgba(255, 255, 255, 0);
     }
 
@@ -242,7 +246,7 @@ h1{
     
     .homeWrap{
         margin:auto;
-        margin-top: -70vh;
+        margin-top: -40vh;
         display: flex;
         align-items: center;
         flex-direction: column;
