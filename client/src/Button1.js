@@ -19,7 +19,7 @@ import {withButton} from './ButtonProvider'
     
     return (
         <div className = "button2Wrap">
-           {props.toggle ?
+           
                 <div className = "navbarWrap2">
                     <p className = 'topHead'> Read top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>
@@ -108,9 +108,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("usa-today", 'USA Today')}>USA Today</p>
                     <p onClick = {()=> getNews("the-wall-street-journal", 'Wall Street Journal')}>Wall Street Journal</p>
                 </div>
-            :
-                null
-            }
+            
         </div>
          )
     }

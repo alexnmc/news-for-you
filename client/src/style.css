@@ -101,12 +101,30 @@ img{
     color: rgb(173, 1, 1);
     font-family: helvetica;
     height: 5vh;
-    font-size:14pt;
+    font-size:13pt;
     margin-top:1vh;
     margin-left: 2vw;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(39, 23, 23, 0);
 }
 
+.sourceName1{
+    color: rgb(173, 1, 1);
+    font-family: helvetica;
+    height: 5vh;
+    font-size:13pt;
+    margin-top:1vh;
+    margin-left: -2vw;
+    background-color: rgba(39, 23, 23, 0);
+}
+
+.sourceName4{
+    color: rgb(173, 1, 1);
+    font-family: helvetica;
+    height: 5vh;
+    font-size:15pt;
+    margin-left: -19vw;
+    background-color: rgba(39, 23, 23, 0);
+}
 
 .sourceName2{
     color: rgb(170, 0, 0);
@@ -134,7 +152,7 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 340pt;
+      width: 350pt;
       padding:10px;
       height: auto;
       font-size: 12px;
@@ -198,7 +216,7 @@ h1{
         width: 35vw;
         height:90vh;
         position: fixed;
-        margin-left: 65vw
+        margin-left: 62vw
     }
 
     .sourceName3{
@@ -206,7 +224,8 @@ h1{
         font-family: helvetica;
         font-size: 14pt;
         margin:auto;
-        margin-top: 5vh;
+        margin-left:8vw;
+        margin-top: 4vh;
         background-color: rgba(255, 255, 255, 0);
     }
 
@@ -223,7 +242,7 @@ h1{
     
     .homeWrap{
         margin:auto;
-        margin-top: -77vh;
+        margin-top: -70vh;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -258,11 +277,11 @@ h1{
         font-weight: bolder;
         font-size:11pt;
         animation: fade 2s;  
-        margin:auto
+        margin:10pt
     }
     
     .saveallH1{
-        font-size: 14pt;
+        font-size: 12pt;
         color: rgba(71, 71, 71, 0.795);
         font-family: helvetica;
         pointer-events: none;
@@ -274,10 +293,11 @@ h1{
         display:flex;
         align-items: center;
         justify-content: center;
-        flex-direction:column;
+        flex-direction: row;
         animation: fade 2s;  
         margin:auto;
-        margin-top:-60vh;
+        margin-top:-50vh;
+       
     }
 
     .videoWrap{
@@ -293,17 +313,18 @@ h1{
     }
     
     .topP{
-        height: 25pt;
-        width: 25pt;
+        height: 23pt;
+        width: 23pt;
         cursor:pointer;
         background-image: url('./Photos/top.png');
         background-size: cover;
         background-position: center;
-        margin-right:20vw;
+        margin-left:3vw;
     }
 
     .deleteAccount{
         width: 100pt;
+        margin:auto;
         height: 20pt;
         cursor: pointer;
         border-radius: 2px;
@@ -486,17 +507,18 @@ h4{
     flex-direction:column;
     padding: 1%;
     padding-top:0;
-    height: 81vh;
+    height: 85vh;
     width: 30vh;
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.979);
+    background-color: rgba(255, 255, 255, 0);
     overflow: scroll;
-    margin-top: 46vh;
-    margin-left: 3%;
+    margin-top: 48vh;
+    margin-left: 5%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
     animation: movein 1s, fade 2.8s;
 }
+
 
    @keyframes fade {
        from{opacity: 0}
@@ -505,7 +527,7 @@ h4{
     
    @keyframes movein {
     from{margin-left: -10%}
-    to{ margin-left: 3%}
+    to{ margin-left: 5%}
    }
  
 
@@ -519,12 +541,12 @@ h4{
 
 
 p{
-    font-size: 13pt;
+    font-size: 12pt;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
     cursor: pointer;
-    margin-bottom:1vh;
+    margin-bottom: 4pt;
     font-family: 'helvetica';
     font-weight: 700;
     padding:0.3vh;
@@ -557,7 +579,7 @@ p:hover{
     color:rgb(240, 240, 240);
     padding: 3px;
     padding-top:6px;
-    width: 20vh;
+    width: 27vh;
     height: 2em;
     font-size: 20px;
 }
@@ -567,8 +589,6 @@ h2{
     margin-top:2pt;
     font-size:12pt;
 }
-
-
 
 
 

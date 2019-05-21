@@ -4,6 +4,7 @@ import Loading2 from './Loading2'
 
 
 
+
 class Home extends Component {
     constructor(props){
         super(props)
