@@ -118,7 +118,7 @@ img{
 .sourceName4{
     color: rgb(173, 1, 1);
     font-family: helvetica;
-    font-size:15pt;
+    font-size:14.5pt;
     background-color: rgba(39, 23, 23, 0);
 }
 
@@ -131,7 +131,6 @@ img{
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
 }
-
 
 .h1Wrapper{
     display: flex;
@@ -229,7 +228,7 @@ h1{
     .sourceName3{
         color: rgba(71, 71, 71, 0.966);
         font-family: helvetica;
-        font-size: 14pt;
+        font-size: 13pt;
         background-color: rgba(255, 255, 255, 0);
     }
 
