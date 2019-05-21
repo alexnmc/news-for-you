@@ -112,7 +112,7 @@ img{
     font-family: helvetica;
     height: 5vh;
     font-size:13pt;
-    margin-top:1vh;
+    margin-top: 1vh;
     margin-left: -2vw;
     background-color: rgba(39, 23, 23, 0);
 }
@@ -120,9 +120,9 @@ img{
 .sourceName4{
     color: rgb(173, 1, 1);
     font-family: helvetica;
-    height: 5vh;
     font-size:15pt;
     margin-left: -19vw;
+    margin-top: -2vh;
     background-color: rgba(39, 23, 23, 0);
 }
 
@@ -225,7 +225,7 @@ h1{
         font-size: 14pt;
         margin:auto;
         margin-left:8vw;
-        margin-top: 4vh;
+        margin-top: 8vh;
         background-color: rgba(255, 255, 255, 0);
     }
 
