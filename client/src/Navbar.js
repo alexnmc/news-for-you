@@ -13,10 +13,11 @@ const Navbar = (props) => {
     
     return (
         <div className="navbar">
-            {props.token ? <Link  to = '/'  onClick = {props.handleToggle}>Home</Link> : <p className = 'navbarP'>News For You</p>}
+             <h4 className = 'news4you'>News For You</h4>
+            {props.token && <Link  to = '/'  onClick = {props.handleToggle}>Home</Link>}
             {props.token && <Link to ='/saved'>Saved</Link>}
             {props.token && <Link to = "/"  onClick = {()=> logout3()}>Log out</Link>}
-            {props.token && <h4 className = 'news4you'>News For You</h4>}
+            
         </div>
     )
 }

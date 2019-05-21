@@ -67,7 +67,6 @@ class BBC extends Component {
     render(){
         const article = this.props.articles.map(item => {
         return(
-           
                 <div className = "newsDiv" key = { Math.random()} >
                     <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
@@ -78,7 +77,6 @@ class BBC extends Component {
                         <a className = "readMore"  href={item.url}>read more</a>
                     </div>
                 </div>
-           
         )
     })
        
