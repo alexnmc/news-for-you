@@ -152,12 +152,12 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 350pt;
+      width: 320pt;
       padding:10px;
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-left:27vw;
+      margin-left:29vw;
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
@@ -507,12 +507,12 @@ h4{
     flex-direction:column;
     padding: 1%;
     padding-top:0;
-    height: 85vh;
+    height: 90vh;
     width: 30vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
     overflow: scroll;
-    margin-top: 48vh;
+    margin-top: 45vh;
     margin-left: 5%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
@@ -541,7 +541,7 @@ h4{
 
 
 p{
-    font-size: 12pt;
+    font-size: 12.5pt;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
