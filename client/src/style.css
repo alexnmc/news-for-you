@@ -153,7 +153,7 @@ h1{
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-left:27vw;
+      margin-left:27.5vw;
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
@@ -311,7 +311,7 @@ h1{
         align-items:center;
         justify-content: center;
         border:2px solid rgb(255, 255, 255);
-        margin-top: 19vh;
+        margin-top: 14vh;
         width:255pt;
         height:145pt
     }
