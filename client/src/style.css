@@ -127,7 +127,7 @@ img{
     font-family: helvetica;
     position: fixed;
     margin-top:4vh;
-    font-size: 16pt;
+    font-size: 15pt;
     margin-left: 2vw;
     background-color: rgba(255, 255, 255, 0);
 }
@@ -385,7 +385,7 @@ h1{
 
 .containerH1{
     font-family: 'helvetica';
-    font-size: 15pt;
+    font-size: 14.5pt;
     color: rgb(170, 0, 0);
     margin-top: 3vh;
     margin-left: 2vw;
