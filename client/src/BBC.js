@@ -87,7 +87,7 @@ class BBC extends Component {
                 <div className = "topSpace">
                 </div>
                 <div className = 'h1Wrapper'>
-                    <h1 className = 'sourceName'>Select source</h1>
+                    <h1 className = 'sourceName'>Choose a source</h1>
                 </div>
                 <Button1/>
                 <div className = 'buttonWrap'>
