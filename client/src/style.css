@@ -223,10 +223,10 @@ h1{
 .bottomWrap{
     display: flex;
     justify-content: space-around;
-    width:auto;
-    height: auto;
+    width:98%;
+    height:auto;
+   
 }
-
 
 .buttonWrap{
         display: flex;
