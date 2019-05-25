@@ -72,7 +72,7 @@ class BBC extends Component {
                     <img alt = '' src={item.urlToImage} />
                     <h2> {item.description}</h2>
                     <div className = 'bottomWrap'>
-                        {this.props.token && <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button>}
+                        {this.props.token ? <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button> : <div className = 'buttonReplace'></div>}
                         <h2 className = "name">{item.source.name}</h2>
                         <a className = "readMore"  href={item.url}>read more</a>
                     </div>
