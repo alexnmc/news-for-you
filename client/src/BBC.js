@@ -103,7 +103,7 @@ class BBC extends Component {
                     </div>
                 </div>
                 
-                {this.props.loading === 'on' ? <Loading/> : this.props.articles.length ? article : <h1 className = 'databaseH1'>not available</h1>}
+                {this.props.loading === 'on' ?<div className = 'mainLoad'><Loading/></div> : this.props.articles.length ? article : <h1 className = 'databaseH1'>not available</h1>}
             </div>
         )
     }

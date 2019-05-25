@@ -99,11 +99,11 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                 <button className = 'deleteAll' onClick = {() => this.deleteAll(this.state.idNumber)}>Delete all</button>
                 </div>
                 <div className = 'savedVideo'>
-                <Video2/>
+                    <Video2/>
                 </div>
                 <h1 className = 'sourceName2'>{this.state.articles.length > 0 && `You have ${this.state.articles.length} saved articles:`}</h1>
                 </div>
-                {this.state.request === 'on' ? <Loading/> : this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
+                {this.state.request === 'on' ? <div className = 'savedLoad'><Loading/></div> : this.state.articles.length ? container  : <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
             </div>
     )

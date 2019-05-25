@@ -190,6 +190,25 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:auto;
+    height:90pt;
+    width:90pt;
+   
+}
+
+.mainLoad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:70vh;
+    width:325pt;
+    margin-left:27.5vw;
+}
+
+.savedLoad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height:50vh;
     width:100vw;
 }
