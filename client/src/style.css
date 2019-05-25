@@ -34,7 +34,7 @@
     width: 200pt;
     font-size:11pt;
     color:rgb(255, 255, 255);
-    font-family: 'tahoma' ;
+    font-family: 'helvetica' ;
     position: relative;
     left: 0;
     top: 0;
@@ -57,6 +57,7 @@
    background-color: white;
    padding-bottom: 2pt;
    color:rgba(170, 2, 2, 0.931);
+   font-family: 'helvetica'
 }
 
 
@@ -324,7 +325,7 @@ h1{
         border-radius: 2px;
         background-color: rgba(0, 0, 0, 0);
         color: rgba(155, 0, 0, 0.945);
-        font-family: tahoma;  
+        font-family: helvetica;  
         font-size: 10pt;
         animation: fade 2s;  
     }
