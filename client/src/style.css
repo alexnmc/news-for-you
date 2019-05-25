@@ -223,12 +223,12 @@ h1{
 .bottomWrap{
     display: flex;
     justify-content: space-around;
-    width:300pt;
+    width:auto;
     height: auto;
 }
 
 
-    .buttonWrap{
+.buttonWrap{
         display: flex;
         flex-direction: column;
         align-items: center;
