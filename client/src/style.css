@@ -520,11 +520,10 @@ h4{
     display: none;  
 }
 
-
-   @keyframes fade {
+    @keyframes fade {
        from{opacity: 0}
        to{opacity:1}
-   }
+    }
     
    @keyframes movein {
     from{margin-left: -10%}
