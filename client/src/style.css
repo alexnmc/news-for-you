@@ -110,6 +110,7 @@ img{
     font-family: helvetica;
     font-size:12.5pt;
     background-color: rgba(39, 23, 23, 0);
+   
 }
 
 .sourceName2{
@@ -124,12 +125,13 @@ img{
 
 .h1Wrapper{
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex-direction: column;
-    width: 210pt;
-    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    width:auto;
     position: fixed;
+    width:30vh;
+    margin-left: 5%;
+    margin-top:7pt;
 }
 
 
@@ -155,7 +157,7 @@ h1{
 .h1wrap{
     height: 60pt;
     width: 370pt;
-    margin-top: -40vh;
+    margin-top: -38vh;
     position:fixed;
     display: flex;
     align-items: flex-start;
@@ -226,7 +228,7 @@ h1{
 
     .newsforme{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 15pt;
+        font-size: 13pt;
         text-align: center;
         color: rgba(71, 71, 71, 0.767);
         animation: fade 3s;
@@ -237,7 +239,7 @@ h1{
     
     .homeWrap{
         margin:auto;
-        margin-top: -35vh;
+        margin-top: -30vh;
         display: flex;
         align-items: center;
         flex-direction: column;

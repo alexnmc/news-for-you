@@ -84,9 +84,6 @@ class BBC extends Component {
             <div className = 'bbcDiv'>
                 <div className = "topSpace">
                 </div>
-                <div className = 'h1Wrapper'>
-                    <h1 className = 'sourceName4'> {`Reading now: ${this.props.sourceName || this.props.name}`}</h1>   
-                </div>
                 <Button1/>
                 <div className = 'buttonWrap'>
                 <div className = "h1wrap">

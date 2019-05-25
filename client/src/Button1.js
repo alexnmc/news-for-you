@@ -19,7 +19,9 @@ import {withButton} from './ButtonProvider'
     
     return (
         <div className = "button2Wrap">
-           
+                <div className = 'h1Wrapper'>
+                    <h1 className = 'sourceName4'> {`Reading now: ${props.sourceName || props.name}`}</h1>   
+                </div>
                 <div className = "navbarWrap2">
                     <p className = 'topHead'> Read top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>
