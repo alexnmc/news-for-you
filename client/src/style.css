@@ -517,7 +517,7 @@ h4{
 }
 
 .navbarWrap2::-webkit-scrollbar { 
-    display: none;  // Safari and Chrome
+    display: none;  
 }
 
 
