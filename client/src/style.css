@@ -53,7 +53,7 @@
    margin:auto;
    margin-top: 7pt;
    margin-left:5vw;
-   font-size: 12.5pt;
+   font-size: 12pt;
    background-color: white;
    padding-bottom: 2pt;
    color:rgba(170, 2, 2, 0.931);
@@ -107,7 +107,7 @@ img{
 .sourceName4{
     color: rgb(165, 3, 3);
     font-family: helvetica;
-    font-size:13.5pt;
+    font-size:12.5pt;
     background-color: rgba(39, 23, 23, 0);
 }
 
@@ -133,7 +133,7 @@ img{
 
 
 h1{
-    font-size:14pt;
+    font-size:12.5pt;
     pointer-events: none;
 }
 
@@ -220,7 +220,7 @@ h1{
     .sourceName3{
         color: rgba(71, 71, 71, 0.966);
         font-family: helvetica;
-        font-size: 13pt;
+        font-size: 12pt;
     }
 
     .newsforme{
@@ -450,7 +450,7 @@ button{
     margin-top: 0.5vh;
     color: rgb(171, 0, 0);
     margin: auto;
-    font-size: 12.5pt;
+    font-size: 11.5pt;
 }
 
 .name2{
@@ -461,7 +461,7 @@ button{
 h4{
     margin-bottom: 5%;
     color: rgba(175, 0, 0, 0.918);
-    font-size: 14pt;
+    font-size: 13pt;
 }
 
 .login1{
@@ -490,7 +490,7 @@ h4{
 
 .readMore{
     color: rgb(0, 0, 123);
-    font-size: 11.5pt;
+    font-size: 10pt;
     font-weight: 500;
     cursor: pointer;
     margin: 0px;
@@ -501,12 +501,12 @@ h4{
     flex-direction:column;
     padding: 1%;
     padding-top:0;
-    height: 85vh;
+    height: 83vh;
     width: 30vh;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
     overflow: scroll;
-    margin-top: 47vh;
+    margin-top: 45vh;
     margin-left: 5%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
@@ -535,7 +535,7 @@ h4{
 
 
 p{
-    font-size: 12.5pt;
+    font-size: 12pt;
     font-weight: bolder;
     text-decoration: none;
     color: rgb(155, 0, 0);
@@ -548,7 +548,7 @@ p{
 }
 
 .argentina{
-    margin-top: 7.5vh
+    margin-top: 6vh
 }
 
 p:hover{
@@ -560,10 +560,10 @@ p:hover{
     position: fixed;
     background-color: rgba(170, 0, 0, 0.952);
     color:rgb(255, 255, 255);
-    padding: 7px;
+    padding: 12px;
     width: 27vh;
     height: auto;
-    font-size: 13pt;
+    font-size: 11pt;
     pointer-events: none;
 }
 
@@ -581,7 +581,7 @@ p:hover{
 
 h2{
     margin-top:2pt;
-    font-size:12pt;
+    font-size:11.5pt;
 }
 
 
