@@ -53,7 +53,7 @@
    margin:auto;
    margin-top: 7pt;
    margin-left:5vw;
-   font-size: 12pt;
+   font-size: 12.5pt;
    background-color: white;
    padding-bottom: 2pt;
    color:rgba(170, 2, 2, 0.931);
@@ -166,10 +166,10 @@ h1{
 }
 
 .newsDiv2{
-    width: 24.5vw;
+    width: 24vw;
     padding: 10px;
     font-size: 8px;
-    margin: 3.5vw;
+    margin: 4vw;
     margin-bottom:0pt;
     margin-top: 2.5vh;
     background-color: white;
@@ -323,7 +323,7 @@ h1{
         align-items:center;
         justify-content: center;
         border:2px solid rgb(255, 255, 255);
-        margin-top: 14vh;
+        margin-top: 17vh;
         width:255pt;
         height:145pt
     }
@@ -361,13 +361,13 @@ h1{
 
 
 .videoWrap2{
-    width:203pt;
-    height:114pt;
+    width:189pt;
+    height:106.5pt;
     position:fixed;
     margin:auto;
     opacity:1;
-    margin-left:30.5vw;
-    margin-top: -6pt;
+    margin-left:31.5vw;
+    margin-top: -7pt;
 }
 
 .topSpace{
@@ -385,7 +385,6 @@ h1{
 
 .bbcDiv{
     background-color: rgb(255, 255, 250);
-    
 }
 
 .container{
@@ -1020,7 +1019,7 @@ h2{
      }
 
      .newsDiv2{
-         width: 350pt;
+         width: 325pt;
      }
 
      .topP{
