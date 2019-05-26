@@ -155,9 +155,9 @@ h1{
 }
 
 .h1wrap{
-    height: 60pt;
+    
     width: 370pt;
-    margin-top: -38vh;
+    margin-top: -40vh;
     position:fixed;
     display: flex;
     align-items: flex-start;
@@ -242,12 +242,13 @@ h1{
     .sourceName3{
         color: rgba(71, 71, 71, 0.966);
         font-family: helvetica;
-        font-size: 12pt;
+        font-size: 12.5pt;
+       
     }
 
     .newsforme{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 13pt;
+        font-size: 13.5pt;
         text-align: center;
         color: rgba(71, 71, 71, 0.767);
         animation: fade 3s;
