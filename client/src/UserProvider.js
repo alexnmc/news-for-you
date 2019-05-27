@@ -92,7 +92,7 @@ class UserProvider extends Component {
                 password: '',
             })
 
-        this.editToggler2()
+        
         this.props.handleToggle()
     }
 
