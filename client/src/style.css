@@ -649,17 +649,17 @@ h2{
     .topHead,
     .topHead2{
         width: 20vw;
-        font-size: 8pt;
+        font-size: 6pt;
     }
 
     .argentina{
-        margin-top:6vh;
+        margin-top:10vh;
     }
     
     .navbarWrap2{
         width: 20vw;
-        height: 80vh;
-        margin-top:51vh;
+        height: 85vh;
+        margin-top:50vh;
         padding: 0px;
         border: 0px;
         margin-left:0px;
@@ -753,7 +753,6 @@ h2{
         animation: fade 2s;  
     }
 
-    
     .bottomContainer{
         width: 270pt;
         margin-left:110pt;
@@ -854,7 +853,6 @@ h2{
     .saveallDiv{
         width:0pt;
         height:0pt;
-
     }
     
     .videoWrap,
@@ -866,13 +864,20 @@ h2{
     .homeWrap{
         margin-top: auto;
         margin:auto;
-       
     }
 
     .buttonWrap{
         width:25vw;
         margin-left:75%
     }
+
+    .h1Wrapper{
+        margin-top:7vh;
+        width:auto;
+        margin-left:75vw;
+    }
+    
+   
 
     @keyframes move2{
         from{ margin-left: 90%}
@@ -890,8 +895,8 @@ h2{
      }
 
      .sourceName4{
-         font-size: 9pt;
-         margin-left:60pt
+         font-size: 8pt;
+        
      }
      
      
