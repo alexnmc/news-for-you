@@ -619,7 +619,7 @@ h2{
 
 
 
-@media only screen and (max-width: 1135px) {
+@media only screen and (max-width: 600px) {
     
     .navbarP{
         font-size: 9pt;
@@ -662,7 +662,7 @@ h2{
         margin-top:50vh;
         padding: 0px;
         border: 0px;
-        margin-left:0px;
+        margin-left:0;
         animation: fadein 1s, fade 1.2s;
     }
 
@@ -909,89 +909,294 @@ h2{
 
 
 
-@media only screen and (min-width: 1136px) and (max-width: 1254px) {
 
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+    .navbarP{
+        font-size: 9pt;
+        margin-bottom: 0pt;
+    }
+    
     .newsDiv{
-        width: 290pt;
-        margin-left:25vw;
-    }
-
-    h1{
-        font-size: 12pt;
-    }
-
-    h2{
-        font-size: 11pt;
+        width:37vw;
+        height: auto;
+        margin: auto;
+        padding:8px;
+        border-top: 0;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        font-size: 10pt;
     }
     
-    
-    .newsforme{
-        font-size: 100%
-    }
-    
-    .newsDiv2{
-        width:220pt;
+    img{
+        height: 100%;
+        width: 100%;
+        margin:0px;
+        margin-top:4pt;
     }
 
+    .topHead,
+    .topHead2{
+        width: 20vw;
+        font-size: 6pt;
+    }
+
+    .argentina{
+        margin-top:5vh;
+    }
+    
     .navbarWrap2{
-        width: 26vw;
+        width: 20vw;
         height: 85vh;
-        margin-top:47vh;
+        margin-top:45vh;
         padding: 0px;
         border: 0px;
-        margin-left:0px;
+        margin-left:5vw;
         animation: fadein 1s, fade 1.2s;
     }
 
-    p{font-size: 11pt;}
+    p{font-size: 8pt;}
     
-    .videoWrap{
-        width:200pt;
-        height:114pt;
+    h1,
+    h2,
+    .readMore,
+    .sourceName,
+    .sourceName2,
+    
+    .newsforme{
+        font-size:9pt;
+        margin: 0px;
+    }
+    .savedH2{
+        font-size:9pt;
+        margin:0px;
+    }
+
+    .sourceName{
+        margin-top: 13pt;
+        margin-left: 2vw;
     }
     
+    .sourceName3{
+        margin-bottom:20pt;
+        font-size:8pt;
+    }
+
+    .newsforme{
+        font-size:8pt;
+    }
     
-    .videoWrap2{
+    .loginForm,
+    .logIn,
+    .signUp{
+         width: auto;
+    }
+
+    .home{
+        margin-left:5vw;
+    }
+
+    .loginButton{
+        width: 60pt;
+        font-size: 8pt;
+        height: 17pt;
+    }
+    
+    .login1{
+        width:70pt;
+        height: 18pt;
+        font-size:7pt;
+    }
+ 
+     h4{
+         font-size: 10pt;
+     }
+     
+     button{
+         width:37pt;
+         height: 12pt;
+         font-size: 7pt;
+     }
+
+     .news4you{
+         font-size: 10pt;
+     }
+
+    a{
+         font-size:12pt;
+         color: rgb(170, 0, 0);
+         font-weight: 900;
+     }
+
+    .saveAll{
+        width:45pt;
+        height: 14pt;
+        font-size:8pt;
+        cursor: pointer;
+        position:fixed;
+        border-radius: 2px;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgb(0, 179, 39);
+        font-family: tahoma;  
+        font-weight: bolder;
+        animation: fade 2s;  
+    }
+
+    .bottomContainer{
+        width: 270pt;
+        margin-left:110pt;
+    }
+    
+    .topP{
+        width: 20pt;
+        height:20pt;
+        
+    }
+    
+    .deleteAccount{
         visibility: hidden;
     }
 
-    .name2{
-        font-size: 9pt;
+    .newsDiv2{
+        width: 50vw;
+        margin: 4vw;
+        font-size: 12pt;
+        padding:2pt;
     }
 
-     .bottomContainer{
-         width:150pt;
-         display: flex;
+    .savedH1{
+        font-size:10pt;
+    }
+
+    .containerH1{
+        font-size: 7pt;
+    }
+
+    .readMore2{
+        font-size: 8pt;
+    }
+
+    .delete{
+         width: 40pt;
+         height: 12pt;
+         font-size: 7pt;
+         display:flex;
          align-items: center;
-         justify-content: center
+         justify-content: center;
+    }
+
+    .name2{
+        font-size:9pt;
+    }
+     
+    .name{
+         font-size: 8pt;
+     }
+    
+    .sourceName2{
+        margin-top: 20pt;
+        font-size:10pt;
+    }
+
+    .deleteAll{
+        width:50pt;
+        height:15pt;
+        font-size:7pt;
+        margin-top: 15pt;
+        margin-left: 31vw;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .rates{
+        height:18pt;
+    }
+
+    .newsforme{
+        margin-bottom: 20pt;
+    }
+
+    .dollar{
+        font-size: 11pt;
+        
+    }
+
+    .navbarP{
+        width:80pt;
+    }
+    .navbar{
+        height: 25pt;
+    }
+
+    .rates{
+        margin-top:25pt;
+    }
+    
+    .saveallDiv{
+        width:0pt;
+        height:0pt;
+    }
+    
+    .videoWrap,
+    .videoWrap2,
+    .saveallH1{
+        visibility: hidden;
+    }
+
+    .homeWrap{
+        margin-top: auto;
+        margin:auto;
+    }
+
+    .buttonWrap{
+        width:25vw;
+        margin-left:75%
+    }
+
+    .h1Wrapper{
+        margin-top:10vh;
+        width:auto;
+        margin-left:75vw;
+    }
+    
+   
+
+    @keyframes move2{
+        from{ margin-left: 90%}
+        to{ margin-left: -3vw}
+    }
+
+    .home{
+        margin-left: -3vw;
+    }
+
+    .h1wrap{
+       height:25vh
+
+       
      }
 
-     .topP{
-         margin:auto;
+     .sourceName4{
+         font-size: 8pt;
+        
      }
-
-     .deleteAccount{
-         visibility: hidden;
-         width:1pt;
-     }
-
-     .saveallDiv{
-         width: 160pt;
-         margin-left: 7vw;
-     }
-
-     .saveallH1{
-         font-size:11pt
-     }
-
-     .saveAll{
-         width:70pt;
-     }
-
+     
+     
+     .sourceName1,
      .sourceName3{
-         font-size:12pt;
+         visibility: hidden;
      }
 }
+
+
+
+
 
 
 
