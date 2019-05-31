@@ -619,7 +619,7 @@ h2{
 
 
 
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 1135px) {
     
     .navbarP{
         font-size: 9pt;
@@ -909,7 +909,7 @@ h2{
 
 
 
-@media only screen and (min-width: 897px) and (max-width: 1254px) {
+@media only screen and (min-width: 1136px) and (max-width: 1254px) {
 
     .newsDiv{
         width: 290pt;
