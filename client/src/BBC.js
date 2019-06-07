@@ -68,8 +68,8 @@ class BBC extends Component {
         const article = this.props.articles.map(item => {
         return(
                 <div className = "newsDiv" key = { Math.random()} >
-                    <h1> {item.title}</h1>
                     <img alt = '' src={item.urlToImage} />
+                    <h1> {item.title}</h1>
                     <h2> {item.description}</h2>
                     <div className = 'bottomWrap'>
                         {this.props.token ? <button onClick = {() => this.save(item.title, item.urlToImage, item.description, item.url, item.source.name)} >Save </button> : <div className = 'buttonReplace'></div>}

@@ -75,11 +75,9 @@ a:hover{
 }
 
 h1{
-    margin-bottom:7px;
-    color:rgb(32, 32, 32);
+   
+    color:rgb(0, 0, 0);
 }
-
-
 
 img{
     width: 100%;
@@ -477,11 +475,14 @@ button{
     color: rgb(171, 0, 0);
     margin: auto;
     font-size: 11.5pt;
+    font-weight: 900;
 }
 
 .name2{
     color: rgb(171, 0, 0);
     margin: auto;
+    font-weight: 900;
+    font-size:10.5pt;
 }
 
 h4{
@@ -610,10 +611,11 @@ p:hover{
 
 
 h2{
-    margin-top:2pt;
+    margin-top: 0pt;
     font-size:12pt;
-    font-weight: 600;
-    color: rgb(34, 34, 34);
+    font-weight: 400;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
     
 }
 
