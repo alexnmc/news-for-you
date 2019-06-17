@@ -72,8 +72,8 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                                 return(
                                     <div key = {Math.random()}>
                                         <div className = "newsDiv2">
-                                            <h1 className = 'savedH1'>{item.title}</h1>
                                             <img alt = '' src={item.urlToImage} />
+                                            <h1 className = 'savedH1'>{item.title}</h1>
                                             <h2 className = 'savedH2'> {item.description}</h2>
                                             <div className = 'bottomWrap'>
                                                 <button className = 'delete' onClick = {() => this.delete(item._id)}>Delete</button>
