@@ -57,7 +57,7 @@ articlesRouter.post('/:title', (req, res, next) => {
 
 
 
-articlesRouter.delete('/delete/:id', (req, res, next) => {  //delete one by ID 
+articlesRouter.delete('/delete/:id', (req, res, next) => {  //delete all by ID 
      
     Article.remove({userID: req.params.id},(err, data) => {
         if (err) {

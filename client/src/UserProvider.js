@@ -23,7 +23,6 @@ class UserProvider extends Component {
     }
 
     
-    
     editToggler2 = () => {
         this.setState(prevState => {
             return {
@@ -38,7 +37,6 @@ class UserProvider extends Component {
             loginLoading:'off'
         })
     }
-
 
     signup = userInfo => {
         this.state.password === this.state.repeat ?
@@ -91,8 +89,6 @@ class UserProvider extends Component {
                 username: '',
                 password: '',
             })
-
-        
         this.props.handleToggle()
     }
 
