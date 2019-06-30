@@ -4,7 +4,7 @@ const Article = require("../models/articles")
 
 
 
-articlesRouter.get('/:id', (req, res) => {    // get all for testing with postman 
+articlesRouter.get('/:id', (req, res) => {    // get all by userID 
     
     Article.find({userID: req.params.id} , (err, data) => {
         if(err) {
@@ -57,7 +57,7 @@ articlesRouter.post('/:title', (req, res, next) => {
 
 
 
-articlesRouter.delete('/delete/:id', (req, res, next) => {  //delete all by ID 
+articlesRouter.delete('/delete/:id', (req, res, next) => {  //delete all by userID 
      
     Article.remove({userID: req.params.id},(err, data) => {
         if (err) {
