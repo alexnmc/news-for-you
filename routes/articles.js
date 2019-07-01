@@ -18,7 +18,7 @@ articlesRouter.get('/:id', (req, res) => {    // get all by userID
 
 articlesRouter.get('/', (req, res) => {    // get all for testing with postman 
     
-    Article.find( (err, data) => {
+    Article.find((err, data) => {
         if(err) {
             res.status(500)
             return next(err)

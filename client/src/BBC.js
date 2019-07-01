@@ -55,7 +55,7 @@ class BBC extends Component {
    
 
     handleErase = () => {
-        var answer = window.confirm("This will permanently delete you account, are you sure you want to proceed?")
+        var answer = window.confirm("This will permanently delete your account, are you sure you want to proceed?")
             if(answer){
                 this.props.handleDelete2(this.props.user._id)
                 this.props.logout()

@@ -88,6 +88,7 @@ class UserProvider extends Component {
             this.setState({
                 username: '',
                 password: '',
+                repeat:''
             })
         this.props.handleToggle()
     }

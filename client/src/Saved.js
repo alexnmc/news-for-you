@@ -42,15 +42,19 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
     
 
     deleteAll = (id) => {
-        var answer = window.confirm("Are you sure you want to delete all your saved articles?")
-            if(answer){
-                axios.delete(`articles/delete/${id}`).then(response => {
-                alert(response.data)
-                })
-                this.setState({
-                    articles: []
-                })
-        }
+        if(this.state.articles.length){
+            var answer = window.confirm("Are you sure you want to delete all your saved articles?")
+                if(answer){
+                    axios.delete(`articles/delete/${id}`).then(response => {
+                    alert(response.data)
+                    })
+                    this.setState({
+                        articles: []
+                    })
+            }
+        }else{
+            alert("you don't have any saved articles")
+        }    
     }   
 
     
@@ -83,6 +87,8 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                                         </div>
                                     </div>
                                 )
+                            }else{
+                                return null // I had an error message...
                             }
                       })
                     }
