@@ -17,11 +17,11 @@ class ButtonProvider extends Component {
             name: localStorage.getItem("name") || "USA",
             sourceName: this.name,
             loading: 'on',
+            switch: true
             
         }
     }
    
-    
     getMount = () => {
         axios.get( `https://newsapi.org/v2/top-headlines?${this.state.url.length > 2 ? 'sources' : 'country'}=${this.state.url}&apiKey=f64c9be83f094f43a2c3954a6c1ec8aa`)
             .then(response => {
@@ -33,13 +33,11 @@ class ButtonProvider extends Component {
             })
     }
 
-
     loadingAnimation = () =>{
         this.setState({
             loading: 'on'
         })
     }
-
 
     getNewsSource= (url, name) => {  
         Scroll.animateScroll.scrollToTop()
@@ -61,7 +59,6 @@ class ButtonProvider extends Component {
             })
     }
    
-   
     getNewsCountry = (url, name) => { 
         Scroll.animateScroll.scrollToTop()
         localStorage.setItem("url", url) 
@@ -82,7 +79,6 @@ class ButtonProvider extends Component {
             })
     }
         
-    
     handleToggle = () => {
         this.setState( prevState => {   
                     return { 
@@ -92,10 +88,17 @@ class ButtonProvider extends Component {
         this.getMount()
     }
     
-    
     deleteAll = (id) => {
         axios.delete(`articles/delete/${id}`).then(response => {
             alert(response.data)
+        })
+    }
+
+    editSwitch = () =>{
+        this.setState(prevState => {
+            return {
+                switch: !prevState.switch,
+            }
         })
     }
     
@@ -110,6 +113,7 @@ class ButtonProvider extends Component {
                     handleToggle: this.handleToggle,
                     deleteAll: this.deleteAll,
                     loadingAnimation: this.loadingAnimation,
+                    editSwitch: this.editSwitch,
                     ...this.state
                 }}>
                 {this.props.children}

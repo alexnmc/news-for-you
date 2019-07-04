@@ -188,7 +188,6 @@ h1{
     margin:auto;
     height:90pt;
     width:90pt;
-   
 }
 
 .mainLoad{
@@ -232,7 +231,7 @@ h1{
         height:90vh;
         position: fixed;
         margin-left: 62vw
-    }
+}
 
     .sourceName3{
         color: rgba(71, 71, 71, 0.966);
@@ -599,14 +598,15 @@ p:hover{
     pointer-events: none;
 }
 
-.topHead2{
+.switchTo{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
     padding: 3px;
-    padding-top:6px;
-    width: 27vh;
-    height: 2em;
-    font-size: 20px;
+    width: 20vh;
+    font-size: 17px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

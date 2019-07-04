@@ -3,7 +3,8 @@ import {withButton} from './ButtonProvider'
 
 
     const Button1 = (props) => {
-
+         
+        let myRef = React.createRef() 
        
         function getNews(url, name) {
             props.getNewsSource(url, name)
@@ -15,6 +16,11 @@ import {withButton} from './ButtonProvider'
             props.getNewsCountry(url, name)
             props.loadingAnimation()
         }
+
+       function  scrolling(){
+          props.editSwitch()
+          myRef.current.scrollTo({top: 0, behavior: 'smooth'})
+        }
        
     
     return (
@@ -22,8 +28,10 @@ import {withButton} from './ButtonProvider'
                 <div className = 'h1Wrapper'>
                     <h1 className = 'sourceName4'> {`Reading now: ${props.sourceName || props.name}`}</h1>   
                 </div>
-                <div className = "navbarWrap2">
-                    <p className = 'topHead'> Read top headlines from:</p>
+                <div className = "navbarWrap2" ref = {myRef}>
+                {props.switch  ?
+                    <div>
+                    <p className = 'topHead'>Top headlines from:</p>
                     <p className = 'argentina' onClick = {()=> getNews2("ar", "Argentina")}>Argentina</p>
                     <p onClick = {()=> getNews2("au", "Australia")}>Australia</p>
                     <p onClick = {()=> getNews2("at", "Austria")}>Austria</p>
@@ -77,7 +85,12 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews2("gb", "United Kingdom")}>United Kingdom</p>
                     <p onClick = {()=> getNews2("us", "USA")}>USA</p>
                     <p onClick = {()=> getNews2("ve", "Venezuela")}>Venezuela</p>
-                    <p onClick = {()=> getNews("abc-news", "ABC News")}>ABC </p>
+                    <p  className = 'switchTo' onClick = {() => scrolling()}>Channels</p>  
+                </div>
+                :
+                <div>
+                    <p className = 'topHead'>Top headlines from:</p>
+                    <p className = 'argentina' onClick = {()=> getNews("abc-news", "ABC News")}>ABC </p>
                     <p onClick = {()=> getNews("axios", "Axios")}>Axios</p>
                     <p onClick = {()=> getNews("bbc-news", "BBC News")}>BBC News</p>
                     <p onClick = {()=> getNews("bbc-sport", 'BBC Sport')}>BBC Sport</p>
@@ -86,7 +99,7 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("cbs-news", 'CBS News')}>CBS</p>
                     <p onClick = {()=> getNews("cnn","CNN")}>CNN</p>
                     <p onClick = {()=> getNews("cnbc", "CNBC News")}>CNBC </p>
-                    <p onClick = {()=> getNews("crypto-coins-news", 'Crypto Coins News')}>Crypto Coins News</p>
+                    <p onClick = {()=> getNews("crypto-coins-news", 'Crypto Coins News')}>Crypto News</p>
                     <p onClick = {()=> getNews("daily-mail", "Daily Mail News")}>Daily Mail</p>
                     <p onClick = {()=> getNews("espn", 'ESPN News')}>ESPN</p>
                     <p onClick = {()=> getNews("entertainment-weekly", 'Entertaiment Weekly')}>Entertainment Weekly</p>
@@ -108,10 +121,12 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews("time", 'TIME')}>TIME</p>
                     <p onClick = {()=> getNews("usa-today", 'USA Today')}>USA Today</p>
                     <p onClick = {()=> getNews("the-wall-street-journal", 'Wall Street Journal')}>Wall Street Journal</p>
+                    <p className = 'switchTo' onClick = {() => scrolling()}>Countries</p>
                 </div>
-            
+                }
+           </div>
         </div>
-         )
+    )
     }
 
                
