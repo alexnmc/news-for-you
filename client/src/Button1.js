@@ -77,7 +77,6 @@ import {withButton} from './ButtonProvider'
                     <p onClick = {()=> getNews2("gb", "United Kingdom")}>United Kingdom</p>
                     <p onClick = {()=> getNews2("us", "USA")}>USA</p>
                     <p onClick = {()=> getNews2("ve", "Venezuela")}>Venezuela</p>
-                  <p className = 'topHead2'></p>
                     <p onClick = {()=> getNews("abc-news", "ABC News")}>ABC </p>
                     <p onClick = {()=> getNews("axios", "Axios")}>Axios</p>
                     <p onClick = {()=> getNews("bbc-news", "BBC News")}>BBC News</p>
