@@ -530,7 +530,7 @@ h4{
     padding: 1%;
     padding-top:0;
     height: 81vh;
-    width: 27vh;
+    width: 170pt;
     position: fixed;
     background-color: rgba(255, 255, 255, 0);
     overflow: scroll;
@@ -591,8 +591,8 @@ p:hover{
     position: fixed;
     background-color: rgba(170, 0, 0, 0.952);
     color:rgb(255, 255, 255);
-    padding: 12px;
-    width: 27vh;
+    padding: 10px;
+    width: 170pt;
     height: auto;
     font-size: 11pt;
     pointer-events: none;
@@ -601,12 +601,13 @@ p:hover{
 .switchTo{
     background-color:  rgb(161, 0, 0);
     color:rgb(240, 240, 240);
-    padding: 3px;
-    width: 20vh;
-    font-size: 17px;
+    padding: 5px;
+    width: 140pt;
+    font-size: 15px;
     display:flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
 }
 
 
@@ -1209,13 +1210,39 @@ h2{
         margin-left:60vw;
     }
 
-    .newsDiv{
-        margin-left: 35vw;
+    h1{
+        font-size:18pt;
     }
+
+    h2{
+        font-size: 16pt;
+    }
+
+   
+    .sourceName3,
+    .sourceName2,
+    .sourceName4,
+    .newsforme{
+        font-size: 20pt;
+    }
+
+    .sourceName1{
+       
+        font-size:20pt;
+    }
+
+    .h1wrap{
+        width:auto
+    }
+
 
       .h1Wrapper,
       .navbarWrap2{
           margin-left: 7vw
+      }
+
+      .navbarWrap2{
+          width:190pt;
       }
 
       @keyframes movein {
