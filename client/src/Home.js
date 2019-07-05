@@ -29,8 +29,8 @@ class Home extends Component {
         for(let i = 0; i < final.length; i++){
             final[i].userID = this.props.user._id
             final[i].channel = this.props.name
-            axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
-                alert(response.data)
+            axios.post(`/articles/saveall/${final[i].title}`, final[i]).then(response => {
+                console.log(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
         }
          alert(`All articles from ${this.props.sourceName || this.props.name} are saved.`)
@@ -47,10 +47,12 @@ class Home extends Component {
             channel: this.props.name,
             userID: this.props.user._id
         }
+
+        console.log('saving:',article1)
         axios.post(`/articles/${title}`, article1).then(response => {
             alert(response.data)
         })
-        .catch(err => console.log(err.response.data.errMsg))
+        .catch(err => console.log('err.res.data.errMsg',err.response.data.errMsg))
     }
    
 
