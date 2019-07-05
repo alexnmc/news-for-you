@@ -84,7 +84,7 @@ class Login extends Component {
                             />
                             <button className = 'loginButton'>Sign up</button>
                         </form> 
-                            <button className ='loginButton' onClick = {this.props.editToggler2}>Log in</button>
+                            <button className ='loginButton' onClick = {this.props.editToggler2}>Return</button>
                     </div>            
                     }
                 </div>
