@@ -75,9 +75,10 @@ class UserProvider extends Component {
             password: '',
             loginLoading: 'on'
         })
-        this.props.handleToggle()
+       
     }
 
+    
     handleSignup = (e) => {
         e.preventDefault()
             const newUser = {
@@ -88,9 +89,10 @@ class UserProvider extends Component {
             this.setState({
                 username: '',
                 password: '',
-                repeat:''
+                repeat:'',
+                toggle:true
             })
-        this.props.handleToggle()
+        
     }
 
     handleChange = (e) => {

@@ -12,7 +12,6 @@ class ButtonProvider extends Component {
         super(props)
         this.state = {
             articles: [],
-            toggle: true,
             url: localStorage.getItem("url") || 'us', //returns to the last page viewed
             name: localStorage.getItem("name") || "USA",
             sourceName: this.name,
@@ -79,14 +78,7 @@ class ButtonProvider extends Component {
             })
     }
         
-    handleToggle = () => {
-        this.setState( prevState => {   
-                    return { 
-                        toggle: true,
-                    }
-        })
-        this.getMount()
-    }
+   
     
     deleteAll = (id) => {
         axios.delete(`articles/delete/${id}`).then(response => {
@@ -110,7 +102,6 @@ class ButtonProvider extends Component {
                     getNewsSource: this.getNewsSource,
                     getNewsCountry: this.getNewsCountry,
                     getMount: this.getMount,
-                    handleToggle: this.handleToggle,
                     deleteAll: this.deleteAll,
                     loadingAnimation: this.loadingAnimation,
                     editSwitch: this.editSwitch,

@@ -62,7 +62,7 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         
     let names = []
     for(let i = 0; i < this.state.articles.length; i++){
-        if(!names.includes(this.state.articles[i].channel)){
+        if(!names.includes(this.state.articles[i].channel)){  // sorting eache article to it's container
                 names.push(this.state.articles[i].channel)
         }}
     
@@ -88,7 +88,7 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
                                     </div>
                                 )
                             }else{
-                                return null // I had an error message...
+                                return null // I had an error message without this...
                             }
                       })
                     }
