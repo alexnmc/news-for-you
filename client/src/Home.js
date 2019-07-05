@@ -30,7 +30,7 @@ class Home extends Component {
             final[i].userID = this.props.user._id
             final[i].channel = this.props.name
             axios.post(`/articles/${final[i].title}`, final[i]).then(response => {
-                console.log(response.data)
+                alert(response.data)
             }).catch(err => console.log(err.response.data.errMsg))
         }
          alert(`All articles from ${this.props.sourceName || this.props.name} are saved.`)
