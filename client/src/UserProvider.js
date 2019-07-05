@@ -135,13 +135,6 @@ class UserProvider extends Component {
         return (
             <Context.Provider
                 value={{
-                   username:this.state.username,
-                   password: this.state.password,
-                   adminPassword: this.state.adminPassword,
-                   user: this.state.user,
-                   token: this.state.token,
-                   toggle: this.state.toggle,
-                   loginLoading: this.state.loginLoading,
                    editToggler2 : this.editToggler2,
                    signup : this.signup,
                    login : this.login,
@@ -151,7 +144,8 @@ class UserProvider extends Component {
                    handleDelete2: this.handleDelete2,
                    logout: this.logout,
                    logout2: this.logout2,
-                   loginOff: this.loginOff
+                   loginOff: this.loginOff,
+                   ...this.state
                 }}>
                 {this.props.children}
             </Context.Provider>

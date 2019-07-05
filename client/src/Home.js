@@ -100,7 +100,7 @@ class Home extends Component {
                 </div>
                 
             : 
-           null
+            null
         }
         </div> 
         )
