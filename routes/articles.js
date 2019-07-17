@@ -30,8 +30,8 @@ articlesRouter.get('/', (req, res) => {    // get all for testing with postman
 
 
 articlesRouter.post('/:title', (req, res, next) => {
-    
-    Article.findOne({title: req.params.title, userID: req.body.userID}, (err, article) => { // checks the database for an article with the same title like the one requested, this is awesome...
+    Article.findOne({title: req.params.title, userID: req.body.userID}, (err, article) => { // checks the database for an article with the same title like the one requested
+       
         if (err) {
             res.status(500)
             return next(err)
@@ -43,7 +43,7 @@ articlesRouter.post('/:title', (req, res, next) => {
         } else {
             
             const newArticle = new Article(req.body)
-            newArticle.save((err, player) => {
+            newArticle.save((err, article) => {
                 if (err) {
                     res.status(500)
                     return next(err)
@@ -52,33 +52,8 @@ articlesRouter.post('/:title', (req, res, next) => {
             })
         }
     })
+         
 })
-
-articlesRouter.post('/saveall/:title', (req, res, next) => {
-    
-    Article.findOne({title: req.params.title, userID: req.body.userID}, (err, article) => { // checks the database for an article with the same title like the one requested, this is awesome...
-        if (err) {
-            res.status(500)
-            return next(err)
-        }
-            
-        if(article){ 
-            return res.status(200).send("article is already saved, no duplicates please!")
-
-        } else {
-            
-            const newArticle = new Article(req.body)
-            newArticle.save((err, player) => {
-                if (err) {
-                    res.status(500)
-                    return next(err)
-                }
-                return res.status(201).send("article saved")
-            })
-        }
-    })
-})
-
 
 
 

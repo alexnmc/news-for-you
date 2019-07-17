@@ -4,12 +4,9 @@
     
 }
 
-
-
 body::-webkit-scrollbar { 
     display: none;  
 }
-
 
 .navbar {
     width: 100%;

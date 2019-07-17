@@ -20,6 +20,7 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         this.getArticles(this.props.user._id)
     }
    
+    
     getArticles = (id) => {
         axios.get(`/articles/${id}`)
          .then(response => {
@@ -62,13 +63,13 @@ class Saved extends Component { // no need to exposrt on the bottom of the page
         
     let names = []
     for(let i = 0; i < this.state.articles.length; i++){
-        if(!names.includes(this.state.articles[i].channel)){  // sorting eache article to it's container
+        if(!names.includes(this.state.articles[i].channel)){  // sorting each article to it's container
                 names.push(this.state.articles[i].channel)
         }}
     
     const container = names.map(item2 => {
         return(
-            <div>
+            <div key = {Math.random()}>
                 <h1 className = 'containerH1'>{`Saved from ${item2}`}</h1>
                 <div className = 'container'>
                     {this.state.articles.map(item  => {

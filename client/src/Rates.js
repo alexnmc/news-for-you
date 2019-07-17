@@ -34,7 +34,7 @@ class Rates extends Component {
     render(){
         const exchange = this.state.rates.map(item =>{
             return(
-                <div className = 'money'>
+                <div className = 'money' key = {Math.random()}>
                    <h1 className = 'dollar'> 1$ = {item.value} {item.key}</h1>
                 </div>
                 )
