@@ -131,7 +131,6 @@ img{
     margin-top:7pt;
 }
 
-
 h1{
     font-size:14pt;
     pointer-events: none;
@@ -140,12 +139,12 @@ h1{
 
 .newsDiv{
       border: 0px solid rgb(189, 50, 50);
-      width: 335pt;
+      width: 350pt;
       padding:10px;
       height: auto;
       font-size: 12px;
       margin:auto;
-      margin-left:27vw;
+      margin-left:27.5vw;
       margin-top: 2vh;
       margin-bottom: 10vh;
       background-color: white;
@@ -233,7 +232,7 @@ h1{
         width: 35vw;
         height:90vh;
         position: fixed;
-        margin-left: 62vw
+        margin-left: 63vw
 }
 
     .sourceName3{
@@ -541,7 +540,7 @@ h4{
     background-color: rgba(255, 255, 255, 0);
     overflow: scroll;
     margin-top: 45vh;
-    margin-left: 5%;
+    margin-left: 6%;
     border-left: 1px solid white;
     border-bottom: 1px solid rgb(235, 212, 212);
     animation: movein 2s, fade 2.8s;
@@ -558,7 +557,7 @@ h4{
     
    @keyframes movein {
     from{margin-left: -10%}
-    to{ margin-left: 5%}
+    to{ margin-left: 6%}
    }
  
 
@@ -578,7 +577,7 @@ p{
     color: rgb(155, 0, 0);
     cursor: pointer;
     margin-bottom: 4pt;
-    font-family: 'helvetica';
+    font-family: 'arial';
     font-weight: 700;
     padding:0.3vh;
     padding-left:5%;
