@@ -1188,20 +1188,25 @@ h2{
         
      }
      
-     
      .sourceName1,
      .sourceName3{
          visibility: hidden;
      }
 }
 
+@media only screen and (min-width: 1550px) and (max-width: 2400px) {
+    .buttonWrap{
+        margin-right: 500pt;
+    }
+
+   
+}
 
 
-
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 2400px) {
 
     .buttonWrap{
-        margin-left:60vw;
+        margin-left: 55vw;
     }
 
     h1{
@@ -1229,19 +1234,19 @@ h2{
         width:auto
     }
 
-
-      .h1Wrapper,
+    .h1Wrapper,
       .navbarWrap2{
           margin-left: 7vw
       }
 
       .navbarWrap2{
           width:190pt;
+          margin-left: 15vw;
       }
 
       @keyframes movein {
         from{margin-left: -10%}
-        to{ margin-left: 7vw}
+        to{ margin-left: 15vw}
        }
 
      .argentina{
@@ -1250,6 +1255,7 @@ h2{
 
      .newsDiv{
          width: 380pt;
+         margin-left: 33vw;
      }
 
      .newsDiv2{
