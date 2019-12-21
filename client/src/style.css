@@ -259,7 +259,7 @@ h1{
     
     .homeWrap{
         margin:auto;
-        margin-top: -30vh;
+        margin-top: 0vh;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -349,6 +349,7 @@ h1{
         font-family: helvetica;  
         font-size: 10pt;
         animation: fade 2s;  
+        border: 0px;
     }
     
     .bottomContainer{
