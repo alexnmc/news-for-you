@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bcrypt": "^3.0.7",
     "heroku": "^7.35.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
