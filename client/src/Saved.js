@@ -97,7 +97,6 @@ class Saved extends Component {
     })
 
     return(
-            <div>
             <div className = 'saved'>
                 <div className = "topSpace2">
                 <div>
@@ -113,7 +112,7 @@ class Saved extends Component {
                     :
                     <h1 className = 'databaseH1'>You don't have any saved articles</h1>}
             </div>
-            </div>
+            
     )
     }
 }
