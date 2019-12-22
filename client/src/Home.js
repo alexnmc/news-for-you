@@ -92,10 +92,9 @@ class Home extends Component {
                 </div>   
                     <Login/>
                     {this.props.token && <div className = 'saveallDiv'>
-                                            <h1 className = 'saveallH1'>{`save all the articles from ${this.props.name}`}</h1>
+                                            <h1 className = 'saveallH1'>save all the articles from <span style = {{color: 'rgb(173, 1, 1)'}}>{this.props.name}</span></h1>
                                             <button className = 'saveAll' onClick = {() => this.saveAll()}>Save all</button>
                                          </div>}
-                    
                     <div className = 'bottomContainer'>  
                         <div className = "topP" onClick = {() => Scroll.animateScroll.scrollToTop()}></div>             
                         {this.props.token && <button className = "deleteAccount" onClick = {this.handleErase}>Delete Account</button>}

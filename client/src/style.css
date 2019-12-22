@@ -242,7 +242,7 @@ h1{
         color: rgba(71, 71, 71, 0.966);
         font-family: helvetica;
         font-size: 12.5pt;
-        margin-top:1pt;
+        margin-top:10pt;
        
     }
 
@@ -313,7 +313,7 @@ h1{
         flex-direction: row;
         animation: fade 2s;  
         margin:auto;
-        margin-top:20vh;
+        margin-top:30vh;
     }
 
     .videoWrap{
@@ -448,14 +448,14 @@ button{
 .deleteAll{
     background-color: rgb(192, 0, 0);
     color: rgba(255, 255, 255, 0.968);
-    margin-left:-40vw;
-    margin-top: 30pt;
+    margin-left:80vw;
+    margin-top: 50pt;
     border: 1px solid rgb(157, 0, 0);
     border-radius: 2px;
-    font-weight: 400;
+    font-weight: 600;
     width: 65pt;
     height: 17pt;
-    font-size: 9.5pt;
+    font-size: 9pt;
 }
 
 .databaseH1{
