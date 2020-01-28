@@ -78,8 +78,6 @@ class ButtonProvider extends Component {
             })
     }
         
-   
-    
     deleteAll = (id) => {
         axios.delete(`articles/delete/${id}`).then(response => {
             console.log(response.data)

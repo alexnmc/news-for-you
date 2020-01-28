@@ -3,6 +3,14 @@ import axios from 'axios'
 import {withUser} from './UserProvider'
 import Loading from './Loading'
 
+const newsAxios = axios.create();
+
+newsAxios.interceptors.request.use((config)=>{
+    const token = localStorage.getItem("token");
+    config.headers.Authorization = `Bearer ${token}`;
+    return config;
+})
+
 
 class Saved extends Component { 
     constructor(props){
@@ -20,7 +28,7 @@ class Saved extends Component {
    
     
     getArticles = (id) => {
-        axios.get(`/articles/${id}`)
+        newsAxios.get(`/news/${id}`)
          .then(response => {
             this.setState({
                 articles: response.data,
